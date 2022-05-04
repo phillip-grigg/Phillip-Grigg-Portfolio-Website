@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../../../Users/phillipgrigg/Downloads/favicon_io"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "pgrigg website",
+    "liveServer.settings.port": 5501
+  }
+}

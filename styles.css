@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+p {
+  padding: 1rem;
+}
+
+.hide-slide {
+  display: none;
+}
+
+/* .menu-container {
+  height: 180px;
+} */
+
+.menu {
+  min-height: 12rem;
+  max-height: 12rem;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: grid;
+  justify-content: flex-end;
+  overflow: hidden;
+  z-index: 0;
+  margin-bottom: -7px;
+  background: whitesmoke;
+}
+
+.slide-container {
+  /* border: yellow solid 5px; */
+  width: 100vw;
+  display: grid;
+  justify-items: flex-end;
+  z-index: 0;
+}
+
+.slide {
+  /* border: blue solid 5px; */
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.div-one-2 {
+  background-color: brown;
+  /* height: 70vh; */
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.div-two-2 {
+  background-color: rgb(255, 86, 0);
+  /* height: 70vh; */
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.div-three-2 {
+  background-color: rgb(0, 27, 255);
+  /* height: 70vh; */
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.div-four-2 {
+  background-color: rgba(178, 8, 121);
+  /* height: 70vh; */
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.div-two-2,
+p {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.move-left {
+  left: 100vw;
+}
+
+.div-content {
+  padding: 1rem;
+  min-width: 100vw;
+  z-index: 0;
+}
+
+.top-cog {
+  width: 100vw;
+  height: fit-content;
+  /* box-shadow: 13px 2px 7px -2px #000000; */
+  display: grid;
+  grid-template-columns: repeat(100, 12px);
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: -1px;
+  z-index: 5;
+}
+
+.top-cog-2 {
+  position: absolute;
+  width: 100vw;
+  height: fit-content;
+  /* box-shadow: 13px 2px 7px -2px #000000; */
+  display: grid;
+  grid-template-columns: repeat(100, 12px);
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: -1px;
+  z-index: 6;
+}
+
+.menu-cog {
+  z-index: 0;
+  height: 25rem;
+  width: 25rem;
+  position: sticky;
+  /* top: 0px;
+  left: 320px; */
+  /* border: red solid 5px; */
+}
+
+.test-svg {
+  border: red solid 5px;
+}
+
+.cog-container {
+  position: fixed;
+  transform: translateY(-48px);
+}
+
+.twenty-four-cog {
+  /* left: 17.3%;
+  top: 35%; */
+  height: 180px;
+  width: 180px;
+}
+
+.twenty-four-cog-inner {
+  /* left: 25.4%;
+  top: 43.9%; */
+  height: 115px;
+  width: 115px;
+}
+
+.twenty-cog {
+  /* left: 58.14%;
+  top: 37.4%; */
+  height: 160px;
+  width: 160px;
+}
+
+.six-cog-top {
+  /* left: 0.83%;
+  top: 32.15%; */
+  height: 100px;
+  width: 100px;
+}
+
+.six-cog-top-inner {
+  /* left: 7.8%;
+  top: 39.2%; */
+  height: 45px;
+  width: 45px;
+}
+
+.six-cog-bottom {
+  /* left: 2%;
+  top: 57.4%; */
+  height: 100px;
+  width: 100px;
+}
+
+.six-cog-bottom-inner {
+  /* left: 6.5%;
+  top: 61.9%; */
+  height: 50px;
+  width: 50px;
+}
+
+.twelve-cog {
+  /* left: 45.4%;
+  top: 17%; */
+  height: 120px;
+  width: 120px;
+}
+
+.menu-left {
+  position: fixed;
+  z-index: 4;
+}
+
+.menu-slider {
+  display: block;
+  height: 500px;
+}
+
+.title-name {
+  position: fixed;
+  color: rgba(76, 82, 184, 1);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+/* ------ skills page ----- */
+
+.hard-skills-grid,
+.soft-skills-grid {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  gap: 0.5rem;
+  border: 1px solid blue;
+}
+
+.slide-name {
+  color: rgb(245, 245, 245);
+  padding: 0.5rem 1rem;
+  height: 4rem;
+  margin: 1rem;
+  margin-left: 0;
+  text-transform: capitalize;
+  background-color: rgb(221, 99, 29);
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.six-cog-bottom:hover {
+  background-color: blue;
+}
+
+.six-cog-top:hover {
+  background-color: blue;
+}
+
+.screen-for-button-press {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  display: none;
+}
+
+.screen-for-button-press-display {
+  display: block;
+}

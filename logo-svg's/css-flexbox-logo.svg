@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M200,50C200,22.404 177.596,0 150,0L50,0C22.404,0 0,22.404 0,50L0,150C0,177.596 22.404,200 50,200L150,200C177.596,200 200,177.596 200,150L200,50Z" style="fill:url(#_Radial1);"/>
+    <g id="css-flexbox-logo">
+        <g transform="matrix(1.1371,0,0,1.72222,-12.2829,-68.5556)">
+            <rect x="42.824" y="88" width="29.176" height="36" style="fill:url(#_Linear2);"/>
+        </g>
+        <g transform="matrix(1.42013,0,0,1.72222,75.5965,-68.5556)">
+            <rect x="42.824" y="88" width="29.176" height="36" style="fill:rgb(76,199,227);"/>
+        </g>
+        <g transform="matrix(1.05263,0,0,1.72222,-10.5697,-68.5556)">
+            <rect x="79" y="88" width="57" height="36" style="fill:url(#_Linear3);"/>
+        </g>
+        <g transform="matrix(1.31942,0,0,1.2832,-47.689,-12.5702)">
+            <text x="116.329px" y="109.398px" style="font-family:'Futura-CondensedExtraBold', 'Futura', sans-serif;font-weight:800;font-stretch:condensed;font-size:31.526px;fill:white;">BO<tspan x="154.782px " y="109.398px ">X</tspan></text>
+        </g>
+        <g transform="matrix(1.47699,0,0,1.36436,-38.2915,23.6288)">
+            <text x="42.015px" y="46.031px" style="font-family:'Futura-Bold', 'Futura', sans-serif;font-weight:700;font-size:26.386px;fill:rgb(76,199,227);">CSS</text>
+        </g>
+        <g transform="matrix(1.32524,0,0,1.32524,-32.4685,-38.7249)">
+            <text x="42.824px" y="126px" style="font-family:'Futura-CondensedExtraBold', 'Futura', sans-serif;font-weight:800;font-stretch:condensed;font-size:31.526px;fill:white;">FLEX</text>
+        </g>
+    </g>
+    <defs>
+        <radialGradient id="_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(87.6846,0,0,87.6846,99,100)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="0.54" style="stop-color:rgb(248,246,246);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(224,216,216);stop-opacity:1"/></radialGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(21.5882,0,0,16.1911,42.8237,106)"><stop offset="0" style="stop-color:rgb(76,199,227);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(135,222,242);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(51.3042,4.12573e-14,-9.17784e-14,38.4781,82.1077,106)"><stop offset="0" style="stop-color:rgb(62,207,240);stop-opacity:1"/><stop offset="0.58" style="stop-color:rgb(51,197,231);stop-opacity:1"/><stop offset="0.8" style="stop-color:rgb(26,176,210);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(2,155,190);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
