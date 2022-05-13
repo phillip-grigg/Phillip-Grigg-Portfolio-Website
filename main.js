@@ -56,13 +56,6 @@ function positionMenuCogs() {
     duration: 0,
     rotate: 0,
   });
-  // anime({
-  //   targets: "#menu-slider-el",
-  //   translateY: -210,
-  //   translateX: -280,
-  //   duration: 0,
-  //   rotate: 0,
-  // });
 }
 positionMenuCogs();
 
@@ -510,6 +503,164 @@ const topCogDivFour = document.getElementById("top-cog-4-el");
 for (let i = 0; i < 100; i++) {
   topCogDivFour.appendChild(topCogSingle.cloneNode(true));
 }
+
+// ----- skills slide ------
+
+// - hard skills -
+let hardSkillArray = [];
+
+const hardSkills = document.getElementById("hard-skills-grid-el");
+
+const hardSkill1 = document.createElement("img");
+hardSkill1.setAttribute("src", "./hard-skills-logo/html-logo.svg");
+hardSkillArray.push(hardSkill1);
+const hardSkill2 = document.createElement("img");
+hardSkill2.setAttribute("src", "./hard-skills-logo/css-logo.svg");
+hardSkillArray.push(hardSkill2);
+const hardSkill3 = document.createElement("img");
+hardSkill3.setAttribute("src", "./hard-skills-logo/javascript-logo.svg");
+hardSkillArray.push(hardSkill3);
+const hardSkill4 = document.createElement("img");
+hardSkill4.setAttribute("src", "./hard-skills-logo/css-flexbox-logo.svg");
+hardSkillArray.push(hardSkill4);
+const hardSkill5 = document.createElement("img");
+hardSkill5.setAttribute("src", "./hard-skills-logo/css-grig-logo.svg");
+hardSkillArray.push(hardSkill5);
+const hardSkill6 = document.createElement("img");
+hardSkill6.setAttribute("src", "./hard-skills-logo/git-logo.svg");
+hardSkillArray.push(hardSkill6);
+const hardSkill7 = document.createElement("img");
+hardSkill7.setAttribute("src", "./hard-skills-logo/github-logo.svg");
+hardSkillArray.push(hardSkill7);
+const hardSkill8 = document.createElement("img");
+hardSkill8.setAttribute("src", "./hard-skills-logo/photoshop-logo.svg");
+hardSkillArray.push(hardSkill8);
+const hardSkill9 = document.createElement("img");
+hardSkill9.setAttribute("src", "./hard-skills-logo/Illustrator-logo.svg");
+hardSkillArray.push(hardSkill9);
+const hardSkill10 = document.createElement("img");
+hardSkill10.setAttribute(
+  "src",
+  "./hard-skills-logo/affinity-designer-logo.svg"
+);
+hardSkillArray.push(hardSkill10);
+const hardSkill11 = document.createElement("img");
+hardSkill11.setAttribute("src", "./hard-skills-logo/affinity-photo-logo.svg");
+hardSkillArray.push(hardSkill11);
+
+hardSkillArray.forEach(function (skill) {
+  hardSkills.appendChild(skill);
+});
+
+// - soft skills -
+let softSkillArray = [];
+
+const softSkills = document.getElementById("soft-skills-grid-el");
+
+const softSkill1 = document.createElement("img");
+softSkill1.setAttribute("src", "./soft-skills-logo/communication.svg");
+softSkillArray.push(softSkill1);
+const softSkill2 = document.createElement("img");
+softSkill2.setAttribute("src", "./soft-skills-logo/multitasking.svg");
+softSkillArray.push(softSkill2);
+const softSkill3 = document.createElement("img");
+softSkill3.setAttribute("src", "./soft-skills-logo/learning.svg");
+softSkillArray.push(softSkill3);
+const softSkill4 = document.createElement("img");
+softSkill4.setAttribute("src", "./soft-skills-logo/self-learning.svg");
+softSkillArray.push(softSkill4);
+const softSkill5 = document.createElement("img");
+softSkill5.setAttribute("src", "./soft-skills-logo/coding-smell.svg");
+softSkillArray.push(softSkill5);
+const softSkill6 = document.createElement("img");
+softSkill6.setAttribute("src", "./soft-skills-logo/problem-solving.svg");
+softSkillArray.push(softSkill6);
+const softSkill7 = document.createElement("img");
+softSkill7.setAttribute("src", "./soft-skills-logo/teamwork.svg");
+softSkillArray.push(softSkill7);
+const softSkill8 = document.createElement("img");
+softSkill8.setAttribute("src", "./soft-skills-logo/troubleshooting.svg");
+softSkillArray.push(softSkill8);
+
+softSkillArray.forEach(function (skill) {
+  softSkills.appendChild(skill);
+});
+// ----- social-media-icons ------
+
+document
+  .querySelector(
+    ".social-media-github, .social-media-github-2, .social-media-github-3, .social-media-github-4"
+  )
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+  });
+
+document
+  .querySelector(
+    ".social-media-linkedin, .social-media-linkedin-2, .social-media-linkedin-3, .social-media-linkedin-4"
+  )
+  .addEventListener("click", () => {
+    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+    navigator.clipboard.writeText("Hello World");
+  });
+
+document.querySelector(".social-media-email").addEventListener("click", () => {
+  navigator.clipboard.writeText("pgrigg1991@gmail.com");
+  console.log("test");
+  document
+    .getElementById("email-copied-1-el")
+    .classList.remove("email-copied-hidden");
+  setTimeout(() => {
+    document
+      .getElementById("email-copied-1-el")
+      .classList.add("email-copied-hidden");
+  }, 800);
+});
+
+document
+  .querySelector(".social-media-email-2")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-2-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-2-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
+
+document
+  .querySelector(".social-media-email-3")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-3-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-3-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
+
+document
+  .querySelector(".social-media-email-4")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-4-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-4-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
 
 // const aboutSlideMoveRight = anime({
 //   targets: "#slide-about-el",

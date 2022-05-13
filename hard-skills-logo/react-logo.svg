@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <path d="M200,50C200,22.404 177.596,0 150,0L50,0C22.404,0 0,22.404 0,50L0,150C0,177.596 22.404,200 50,200L150,200C177.596,200 200,177.596 200,150L200,50Z" style="fill:white;"/>
+    <g id="react-logo">
+        <g transform="matrix(6.91304,0,0,6.91304,100,91.515)">
+            <g transform="matrix(1,0,0,1,-11.5,-10.2317)">
+                <clipPath id="_clip1">
+                    <rect x="0" y="0" width="23" height="20.463"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(1,0,0,1,11.5,10.2317)">
+                        <circle cx="0" cy="0" r="2.05" style="fill:rgb(97,218,251);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,11.5,10.2317)">
+                        <ellipse cx="0" cy="0" rx="11" ry="4.2" style="fill:none;stroke:rgb(97,218,251);stroke-width:1px;"/>
+                        <g transform="matrix(0.5,0.866025,-0.866025,0.5,0,0)">
+                            <ellipse cx="0" cy="0" rx="11" ry="4.2" style="fill:none;stroke:rgb(97,218,251);stroke-width:1px;"/>
+                        </g>
+                        <g transform="matrix(-0.5,0.866025,-0.866025,-0.5,0,0)">
+                            <ellipse cx="0" cy="0" rx="11" ry="4.2" style="fill:none;stroke:rgb(97,218,251);stroke-width:1px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Layer2" opacity="0.8">
+            <g transform="matrix(0.611765,0,0,1,1.1306e-14,1)">
+                <path d="M85,154.591C85,153.639 84.381,152.725 83.281,152.052C82.18,151.378 80.686,151 79.129,151C59.895,151 0,151 0,151L0,174L79.129,174C80.686,174 82.18,173.622 83.281,172.948C84.381,172.275 85,171.361 85,170.409C85,166.096 85,158.904 85,154.591Z"/>
+            </g>
+            <g transform="matrix(1.08255,0,0,1,5.11647,-3.54)">
+                <text x="0px" y="171px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:15px;fill:white;">R<tspan x="9.014px " y="171px ">e</tspan>act</text>
+            </g>
+        </g>
+    </g>
+</svg>
