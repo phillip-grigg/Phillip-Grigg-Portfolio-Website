@@ -22,6 +22,20 @@
       href="/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Phillip Grigg WebDev</title>
   </head>
@@ -336,29 +350,37 @@
           <div id="slide-contact-el" class="slide slide-contact">
             <div id="top-cog-4-el" class="top-cog"></div>
             <div class="div-content div-four-2">
-              <h1>top</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                animi id odio maxime maiores, est fugit temporibus aliquam rem
-                quasi quo dolore quae molestias harum a quas soluta,
-                consequuntur asperiores debitis cumque in optio quibusdam
-                dolorem. Officiis qui, debitis quisquam laudantium temporibus
-                corrupti iste aut cupiditate dignissimos modi quam rerum cum id
-                ut commodi. Deserunt consequatur, doloribus eos placeat rerum
-                quae iusto totam molestiae consectetur sint necessitatibus
-                reprehenderit non laboriosam at qui aut. Ad, eveniet. Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Vitae animi
-                id odio maxime maiores, est fugit temporibus aliquam rem quasi
-                quo dolore quae molestias harum a quas soluta, consequuntur
-                asperiores debitis cumque in optio quibusdam dolorem. Officiis
-                qui, debitis quisquam laudantium temporibus corrupti iste aut
-                cupiditate dignissimos modi quam rerum cum id ut commodi.
-                Deserunt consequatur, doloribus eos placeat rerum quae iusto
-                totam molestiae consectetur sint necessitatibus reprehenderit
-                non laboriosam at qui aut. Ad, eveniet.
-              </p>
+              <h1>contact me</h1>
+              <form
+                class="contact-form"
+                action="https://formsubmit.co/pgrigg1991@gmail.com"
+                method="POST"
+              >
+                <input type="text" placeholder="name" name="name" required />
+                <input type="email" placeholder="email" name="email" required />
+                <input type="hidden" name="_next" value="https://pgrigg.dev" />
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="subject"
+                  required
+                />
+                <br />
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button class="email-send-btn" type="submit">Send</button>
+              </form>
               <div class="social-media-icon-links">
-                <div class="social-media social-media-github-4">
+                <div
+                  id="social-media-github-4-el"
+                  class="social-media social-media-github-4"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -412,7 +434,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-linkedin-4">
+                <div
+                  id="social-media-linkedin-4-el"
+                  class="social-media social-media-linkedin-4"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -443,7 +468,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-email-4">
+                <div
+                  id="social-media-email-4-el"
+                  class="social-media social-media-email-4"
+                >
                   <h4
                     id="email-copied-4-el"
                     class="email-copied-1 email-copied-hidden"
@@ -535,7 +563,10 @@
                 ipsum?
               </p>
               <div class="social-media-icon-links">
-                <div class="social-media social-media-github-3">
+                <div
+                  id="social-media-github-3-el"
+                  class="social-media social-media-github-3"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -589,7 +620,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-linkedin-3">
+                <div
+                  id="social-media-linkedin-3-el"
+                  class="social-media social-media-linkedin-3"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -620,7 +654,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-email-3">
+                <div
+                  id="social-media-email-3-el"
+                  class="social-media social-media-email-3"
+                >
                   <h4
                     id="email-copied-3-el"
                     class="email-copied-1 email-copied-hidden"
@@ -703,7 +740,10 @@
               <h1>soft skills</h1>
               <div id="soft-skills-grid-el" class="soft-skills-grid"></div>
               <div class="social-media-icon-links">
-                <div class="social-media social-media-github-2">
+                <div
+                  id="social-media-github-2-el"
+                  class="social-media social-media-github-2"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -757,7 +797,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-linkedin-2">
+                <div
+                  id="social-media-linkedin-2-el"
+                  class="social-media social-media-linkedin-2"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -788,7 +831,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-email-2">
+                <div
+                  id="social-media-email-2-el"
+                  class="social-media social-media-email-2"
+                >
                   <h4
                     id="email-copied-2-el"
                     class="email-copied-1 email-copied-hidden"
@@ -866,8 +912,10 @@
           <div id="slide-about-el" class="slide slide-about">
             <div id="top-cog-2-el" class="top-cog"></div>
             <div class="div-content div-two-2">
-              <h1>Phillip Grigg</h1>
-              <h2>Front-End Web Development</h2>
+              <div id="slide-about-name-el" class="slide-about-name"></div>
+              <hr class="slide-about-hr" />
+              <h2 class="slide-about-job">Front-End Web Development</h2>
+              <hr class="slide-about-hr slide-about-hr-bottom" />
               <p>
                 Young, Foolhardy, Reckless. These are all words to describe
                 me….. 10 years ago, but let me take a moment to talk about me
@@ -893,7 +941,10 @@
                 working with Code.
               </p>
               <div class="social-media-icon-links">
-                <div class="social-media social-media-github">
+                <div
+                  id="social-media-github-1-el"
+                  class="social-media social-media-github"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -947,7 +998,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-linkedin">
+                <div
+                  id="social-media-linkedin-1-el"
+                  class="social-media social-media-linkedin"
+                >
                   <svg
                     width="100%"
                     height="100%"
@@ -978,7 +1032,10 @@
                     </g>
                   </svg>
                 </div>
-                <div class="social-media social-media-email">
+                <div
+                  id="social-media-email-1-el"
+                  class="social-media social-media-email"
+                >
                   <h4
                     id="email-copied-1-el"
                     class="email-copied-1 email-copied-hidden"

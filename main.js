@@ -588,20 +588,45 @@ softSkillArray.forEach(function (skill) {
 // ----- social-media-icons ------
 
 document
-  .querySelector(
-    ".social-media-github, .social-media-github-2, .social-media-github-3, .social-media-github-4"
-  )
+  .getElementById("social-media-github-1-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+  });
+document
+  .getElementById("social-media-github-2-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+  });
+document
+  .getElementById("social-media-github-3-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+  });
+document
+  .getElementById("social-media-github-4-el")
   .addEventListener("click", () => {
     window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
   });
 
 document
-  .querySelector(
-    ".social-media-linkedin, .social-media-linkedin-2, .social-media-linkedin-3, .social-media-linkedin-4"
-  )
+  .getElementById("social-media-linkedin-1-el")
   .addEventListener("click", () => {
     window.open("www.linkedin.com/in/phillip-grigg", "_blank");
-    navigator.clipboard.writeText("Hello World");
+  });
+document
+  .getElementById("social-media-linkedin-2-el")
+  .addEventListener("click", () => {
+    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+  });
+document
+  .getElementById("social-media-linkedin-3-el")
+  .addEventListener("click", () => {
+    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+  });
+document
+  .getElementById("social-media-linkedin-4-el")
+  .addEventListener("click", () => {
+    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
   });
 
 document.querySelector(".social-media-email").addEventListener("click", () => {
@@ -662,90 +687,13 @@ document
     }, 800);
   });
 
-// const aboutSlideMoveRight = anime({
-//   targets: "#slide-about-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const projectsSlideMoveRight = anime({
-//   targets: "#slide-projects-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const skillsSlideMoveRight = anime({
-//   targets: "#slide-skills-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const contactSlideMoveRight = anime({
-//   targets: "#slide-contact-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
+const aboutNameContainer = document.getElementById("slide-about-name-el");
 
-// aboutSlideMoveRight.play();
-// setTimeout(() => {
-//   aboutSlideMoveLeft.play();
-// }, 4000);
+const aboutName = document.createElement("img");
+aboutName.setAttribute("src", "./name-img/name.svg");
 
-// old code
+aboutNameContainer.appendChild(aboutName);
 
-// slideSkills.classList.add("hide-slide");
+// ----- contact slide -----
 
-// function hideHiddenSlide() {
-//   divThree.classList.add("hide-slide");
-// }
-
-// function showHiddenSlide() {
-//   slideSkills.classList.remove("hide-slide");
-// }
-
-// document
-//   .getElementById("six-cog-top-inner-el")
-//   .addEventListener("click", pressBtnLeft);
-
-// document
-//   .getElementById("six-cog-bottom-inner-el")
-//   .addEventListener("click", pressBtnRight);
-
-// ----- menu buttons -----
-// document.getElementById("top-btn1").addEventListener("click", function () {
-//   console.log("ok1");
-//   console.log(count);
-//   document.getElementById(`div${countTranslate}-el`).classList.add("hide");
-//   document.getElementById("div1-el").classList.remove("hide");
-//   count = 1;
-// });
-
-// document.getElementById("top-btn2").addEventListener("click", function () {
-//   console.log("ok2");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div2-el").classList.remove("hide");
-//   count = 2;
-// });
-
-// document.getElementById("top-btn3").addEventListener("click", function () {
-//   console.log("ok3");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div3-el").classList.remove("hide");
-//   count = 3;
-// });
-
-// document.getElementById("top-btn4").addEventListener("click", function () {
-//   console.log("ok4");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div4-el").classList.remove("hide");
-//   count = 4;
-// });
+// ----- end of contact slide -----
