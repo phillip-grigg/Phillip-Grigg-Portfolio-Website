@@ -550,6 +550,7 @@ hardSkillArray.push(hardSkill11);
 
 hardSkillArray.forEach(function (skill) {
   hardSkills.appendChild(skill);
+  hardSkills.classList.add("skill-border");
 });
 
 // - soft skills -
@@ -584,6 +585,7 @@ softSkillArray.push(softSkill8);
 
 softSkillArray.forEach(function (skill) {
   softSkills.appendChild(skill);
+  softSkills.classList.add("skill-border");
 });
 // ----- social-media-icons ------
 
