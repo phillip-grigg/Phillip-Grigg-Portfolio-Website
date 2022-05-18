@@ -260,7 +260,7 @@ p {
 .soft-skills-grid {
   display: grid;
   padding: 2rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   justify-content: space-between;
   gap: 0.5rem;
   border: 1px solid blue;
@@ -432,3 +432,66 @@ textarea {
 /* ----- contact slide ----- */
 
 /* ----- end of contact slide ----- */
+
+/* ----- projects slide ----- */
+.projects-title {
+  margin: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px white solid;
+}
+
+.project {
+  display: grid;
+  margin: auto;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  height: 25rem;
+  gap: 0;
+  max-width: 50rem;
+}
+
+.project-photo {
+  /* height: 15rem;
+  width: 15rem; */
+  margin: 0;
+}
+
+.project-title {
+  font-size: 0.8rem;
+  overflow: scroll;
+}
+
+.project-paragraph {
+  margin: -0.6rem;
+}
+
+.project-text {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.project-title-main {
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline;
+  padding: 0.1rem 1rem;
+}
+
+.project-btn {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: navy;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.project-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* ----- end of projects slide ----- */

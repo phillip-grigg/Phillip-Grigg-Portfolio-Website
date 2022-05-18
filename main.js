@@ -478,7 +478,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const topCogSingleTwo = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-2.svg");
+topCogSingle.setAttribute("src", "./top-cog-3.svg");
 
 const topCogDivTwo = document.getElementById("top-cog-1-el");
 
@@ -487,7 +487,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const topCogSingleThree = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-3.svg");
+topCogSingle.setAttribute("src", "./top-cog-2.svg");
 
 const topCogDivThree = document.getElementById("top-cog-3-el");
 
