@@ -37,17 +37,17 @@ function positionMenuCogs() {
   });
   anime({
     targets: "#six-cog-bottom-el",
-    translateY: 99,
-    translateX: 48,
+    translateY: 72,
+    translateX: 20,
     duration: 0,
     rotate: 0,
   });
   anime({
-    targets: "#six-cog-bottom-inner-el",
-    translateY: 124,
-    translateX: 73,
+    targets: "#fourteen-cog-inner-el",
+    translateY: 96,
+    translateX: 44,
     duration: 0,
-    rotate: 0,
+    rotate: "0.5turn",
   });
   anime({
     targets: "#twelve-cog-el",
@@ -99,7 +99,7 @@ console.log(countTranslateSlider);
 let TurnSliderLeft = false;
 
 const btnLeft = document
-  .getElementById("six-cog-top-inner-el")
+  .getElementById("fourteen-cog-inner-el")
   .addEventListener("click", () => {
     document
       .getElementById("screen-for-button-press-el")
@@ -120,7 +120,7 @@ const btnLeft = document
   });
 
 const btnRight = document
-  .getElementById("six-cog-bottom-inner-el")
+  .getElementById("twenty-four-cog-inner-el")
   .addEventListener("click", () => {
     document
       .getElementById("screen-for-button-press-el")
@@ -478,7 +478,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const topCogSingleTwo = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-3.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivTwo = document.getElementById("top-cog-1-el");
 
@@ -487,7 +487,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const topCogSingleThree = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-2.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivThree = document.getElementById("top-cog-3-el");
 
@@ -496,7 +496,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 const topCogSingleFour = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-4.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivFour = document.getElementById("top-cog-4-el");
 
