@@ -3,7 +3,7 @@
 <svg width="100%" height="100%" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-589.027,-114.683)">
         <g id="straight-cog-part" transform="matrix(0.925484,0,-5.55112e-17,0.857751,-116.256,27.4998)">
-            <path d="M779.148,102.303C775.91,102.198 770.509,102.198 767.272,102.303L762.61,125.708C762.603,125.712 767.867,125.693 783.81,125.718L779.148,102.303Z" style="fill:rgb(255, 86, 0);stroke:rgb(255, 86, 0);stroke-width:1.12px;"/>
+            <path d="M779.148,102.303C775.91,102.198 770.509,102.198 767.272,102.303L762.61,125.708C762.603,125.712 767.867,125.693 783.81,125.718L779.148,102.303Z" style="fill:rgb(16, 76, 200);stroke:rgb(rgb(231, 85, 0));stroke-width:1.12px;"/>
         </g>
     </g>
 </svg>

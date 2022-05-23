@@ -37,17 +37,17 @@ function positionMenuCogs() {
   });
   anime({
     targets: "#six-cog-bottom-el",
-    translateY: 99,
-    translateX: 48,
+    translateY: 72,
+    translateX: 20,
     duration: 0,
     rotate: 0,
   });
   anime({
-    targets: "#six-cog-bottom-inner-el",
-    translateY: 124,
-    translateX: 73,
+    targets: "#fourteen-cog-inner-el",
+    translateY: 96,
+    translateX: 44,
     duration: 0,
-    rotate: 0,
+    rotate: "0.5turn",
   });
   anime({
     targets: "#twelve-cog-el",
@@ -56,13 +56,6 @@ function positionMenuCogs() {
     duration: 0,
     rotate: 0,
   });
-  // anime({
-  //   targets: "#menu-slider-el",
-  //   translateY: -210,
-  //   translateX: -280,
-  //   duration: 0,
-  //   rotate: 0,
-  // });
 }
 positionMenuCogs();
 
@@ -103,50 +96,79 @@ console.log(countTranslateSlider);
 
 // ----- left/right buttons -----
 
-let TurnSliderLeft = false;
+// set buttons to work on arrow keys and n and p keys
+let btnFreeToPress = true;
+document.addEventListener("keydown", function (e) {
+  if (btnFreeToPress == true && (e.key === "ArrowRight" || e.key === "n")) {
+    event.preventDefault();
+    btnRightPress();
+    btnFreeToPress = false;
+    setTimeout(() => {
+      btnFreeToPress = true;
+    }, 3000);
+  } else if (
+    btnFreeToPress == true &&
+    (e.key === "ArrowLeft" || e.key === "p")
+  ) {
+    event.preventDefault();
+    btnLeftPress();
+    btnFreeToPress = false;
+    setTimeout(() => {
+      btnFreeToPress = true;
+    }, 3000);
+  }
+});
 
+let TurnSliderLeft = false;
+// call button function on cog click
 const btnLeft = document
-  .getElementById("six-cog-top-inner-el")
-  .addEventListener("click", () => {
+  .getElementById("fourteen-cog-inner-el")
+  .addEventListener("click", btnLeftPress);
+
+function btnLeftPress() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  document
+    .getElementById("screen-for-button-press-el")
+    .classList.add("screen-for-button-press-display");
+  pressBtnLeft();
+  ChangeNameSlider();
+  setTimeout(() => {
+    slideName.textContent = "";
+  }, 1000);
+  setTimeout(() => {
+    slideName.textContent = countTranslateTable[count];
+  }, 2100);
+  setTimeout(() => {
     document
       .getElementById("screen-for-button-press-el")
-      .classList.add("screen-for-button-press-display");
-    pressBtnLeft();
-    ChangeNameSlider();
-    setTimeout(() => {
-      slideName.textContent = "";
-    }, 1100);
-    setTimeout(() => {
-      slideName.textContent = countTranslateTable[count];
-    }, 2100);
-    setTimeout(() => {
-      document
-        .getElementById("screen-for-button-press-el")
-        .classList.remove("screen-for-button-press-display");
-    }, 3500);
-  });
+      .classList.remove("screen-for-button-press-display");
+  }, 3000);
+}
 
 const btnRight = document
-  .getElementById("six-cog-bottom-inner-el")
-  .addEventListener("click", () => {
+  .getElementById("twenty-four-cog-inner-el")
+  .addEventListener("click", btnRightPress);
+
+function btnRightPress() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  document
+    .getElementById("screen-for-button-press-el")
+    .classList.add("screen-for-button-press-display");
+  pressBtnRight();
+  ChangeNameSlider();
+  setTimeout(() => {
+    slideName.textContent = "";
+  }, 1000);
+  setTimeout(() => {
+    slideName.textContent = countTranslateTable[count];
+  }, 2100);
+  setTimeout(() => {
     document
       .getElementById("screen-for-button-press-el")
-      .classList.add("screen-for-button-press-display");
-    pressBtnRight();
-    ChangeNameSlider();
-    setTimeout(() => {
-      slideName.textContent = "";
-    }, 1100);
-    setTimeout(() => {
-      slideName.textContent = countTranslateTable[count];
-    }, 2100);
-    setTimeout(() => {
-      document
-        .getElementById("screen-for-button-press-el")
-        .classList.remove("screen-for-button-press-display");
-    }, 3500);
-  });
-
+      .classList.remove("screen-for-button-press-display");
+  }, 3000);
+}
+// change name of slide on name slider
 function ChangeNameSlider() {
   anime({
     targets: "#slide-name-el",
@@ -167,6 +189,7 @@ function ChangeNameSlider() {
 }
 
 function pressBtnLeft() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   if (count > 1) {
     twentyFourCogAnimationLeft.play();
     sixCogTopAnimationLeft.play();
@@ -244,8 +267,6 @@ function pressBtnLeft() {
     countPlusOne = `slide-${countTranslateTable[count + 1]}-el`;
     document.getElementById(countPlusOne).classList.add("hide-slide");
   }, 3000);
-
-  console.log(count);
 }
 
 function pressBtnRight() {
@@ -319,9 +340,11 @@ function pressBtnRight() {
     countPlusOne = `slide-${countTranslateTable[count + 1]}-el`;
     document.getElementById(countPlusOne).classList.add("hide-slide");
     countPlusTwo = `slide-${countTranslateTable[count + 2]}-el`;
-    document.getElementById(countPlusOne).classList.add("hide-slide");
-    countPlusThree = `slide-${countTranslateTable[count + 3]}-el`;
-    document.getElementById(countPlusOne).classList.add("hide-slide");
+    document.getElementById(countPlusTwo).classList.add("hide-slide");
+    setTimeout(() => {
+      countPlusThree = `slide-${countTranslateTable[count + 3]}-el`;
+      document.getElementById(countPlusThree).classList.add("hide-slide");
+    }, 2500);
   }
   console.log(count);
 }
@@ -480,121 +503,237 @@ topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDiv = document.getElementById("top-cog-2-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDiv.appendChild(topCogSingle.cloneNode(true));
 }
 
 const topCogSingleTwo = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-2.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivTwo = document.getElementById("top-cog-1-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivTwo.appendChild(topCogSingle.cloneNode(true));
 }
 
 const topCogSingleThree = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-3.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivThree = document.getElementById("top-cog-3-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivThree.appendChild(topCogSingle.cloneNode(true));
 }
 
 const topCogSingleFour = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog-4.svg");
+topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivFour = document.getElementById("top-cog-4-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivFour.appendChild(topCogSingle.cloneNode(true));
 }
+// ----- projects slide -----
+document
+  .getElementById("github-portfolio-website")
+  .addEventListener("click", () => {
+    window.open(
+      "https://github.com/phillip-grigg/Phillip-Grigg-Portfolio-Website.git",
+      "_blank"
+    );
+  });
 
-// const aboutSlideMoveRight = anime({
-//   targets: "#slide-about-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const projectsSlideMoveRight = anime({
-//   targets: "#slide-projects-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const skillsSlideMoveRight = anime({
-//   targets: "#slide-skills-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
-// const contactSlideMoveRight = anime({
-//   targets: "#slide-contact-el",
-//   width: "0%",
-//   direction: "normal",
-//   duration: 3000,
-//   easing: "easeInOutExpo",
-//   autoplay: false,
-// });
+// ----- skills slide ------
 
-// aboutSlideMoveRight.play();
-// setTimeout(() => {
-//   aboutSlideMoveLeft.play();
-// }, 4000);
+// - hard skills -
+let hardSkillArray = [];
 
-// old code
+const hardSkills = document.getElementById("hard-skills-grid-el");
 
-// slideSkills.classList.add("hide-slide");
+const hardSkill1 = document.createElement("img");
+hardSkill1.setAttribute("src", "./hard-skills-logo/html-logo.svg");
+hardSkillArray.push(hardSkill1);
+const hardSkill2 = document.createElement("img");
+hardSkill2.setAttribute("src", "./hard-skills-logo/css-logo.svg");
+hardSkillArray.push(hardSkill2);
+const hardSkill3 = document.createElement("img");
+hardSkill3.setAttribute("src", "./hard-skills-logo/javascript-logo.svg");
+hardSkillArray.push(hardSkill3);
+const hardSkill4 = document.createElement("img");
+hardSkill4.setAttribute("src", "./hard-skills-logo/css-flexbox-logo.svg");
+hardSkillArray.push(hardSkill4);
+const hardSkill5 = document.createElement("img");
+hardSkill5.setAttribute("src", "./hard-skills-logo/css-grig-logo.svg");
+hardSkillArray.push(hardSkill5);
+const hardSkill6 = document.createElement("img");
+hardSkill6.setAttribute("src", "./hard-skills-logo/git-logo.svg");
+hardSkillArray.push(hardSkill6);
+const hardSkill7 = document.createElement("img");
+hardSkill7.setAttribute("src", "./hard-skills-logo/github-logo.svg");
+hardSkillArray.push(hardSkill7);
+const hardSkill8 = document.createElement("img");
+hardSkill8.setAttribute("src", "./hard-skills-logo/photoshop-logo.svg");
+hardSkillArray.push(hardSkill8);
+const hardSkill9 = document.createElement("img");
+hardSkill9.setAttribute("src", "./hard-skills-logo/Illustrator-logo.svg");
+hardSkillArray.push(hardSkill9);
+const hardSkill10 = document.createElement("img");
+hardSkill10.setAttribute(
+  "src",
+  "./hard-skills-logo/affinity-designer-logo.svg"
+);
+hardSkillArray.push(hardSkill10);
+const hardSkill11 = document.createElement("img");
+hardSkill11.setAttribute("src", "./hard-skills-logo/affinity-photo-logo.svg");
+hardSkillArray.push(hardSkill11);
+const hardSkill12 = document.createElement("img");
+hardSkill12.setAttribute("src", "./hard-skills-logo/anime.js-logo.svg");
+hardSkillArray.push(hardSkill12);
 
-// function hideHiddenSlide() {
-//   divThree.classList.add("hide-slide");
-// }
+hardSkillArray.forEach(function (skill) {
+  hardSkills.appendChild(skill);
+  hardSkills.classList.add("skill-border");
+});
 
-// function showHiddenSlide() {
-//   slideSkills.classList.remove("hide-slide");
-// }
+// - soft skills -
+let softSkillArray = [];
 
-// document
-//   .getElementById("six-cog-top-inner-el")
-//   .addEventListener("click", pressBtnLeft);
+const softSkills = document.getElementById("soft-skills-grid-el");
 
-// document
-//   .getElementById("six-cog-bottom-inner-el")
-//   .addEventListener("click", pressBtnRight);
+const softSkill1 = document.createElement("img");
+softSkill1.setAttribute("src", "./soft-skills-logo/communication.svg");
+softSkillArray.push(softSkill1);
+const softSkill2 = document.createElement("img");
+softSkill2.setAttribute("src", "./soft-skills-logo/multitasking.svg");
+softSkillArray.push(softSkill2);
+const softSkill3 = document.createElement("img");
+softSkill3.setAttribute("src", "./soft-skills-logo/learning.svg");
+softSkillArray.push(softSkill3);
+const softSkill4 = document.createElement("img");
+softSkill4.setAttribute("src", "./soft-skills-logo/self-learning.svg");
+softSkillArray.push(softSkill4);
+const softSkill5 = document.createElement("img");
+softSkill5.setAttribute("src", "./soft-skills-logo/coding-smell.svg");
+softSkillArray.push(softSkill5);
+const softSkill6 = document.createElement("img");
+softSkill6.setAttribute("src", "./soft-skills-logo/problem-solving.svg");
+softSkillArray.push(softSkill6);
+const softSkill7 = document.createElement("img");
+softSkill7.setAttribute("src", "./soft-skills-logo/teamwork.svg");
+softSkillArray.push(softSkill7);
+const softSkill8 = document.createElement("img");
+softSkill8.setAttribute("src", "./soft-skills-logo/troubleshooting.svg");
+softSkillArray.push(softSkill8);
 
-// ----- menu buttons -----
-// document.getElementById("top-btn1").addEventListener("click", function () {
-//   console.log("ok1");
-//   console.log(count);
-//   document.getElementById(`div${countTranslate}-el`).classList.add("hide");
-//   document.getElementById("div1-el").classList.remove("hide");
-//   count = 1;
-// });
+softSkillArray.forEach(function (skill) {
+  softSkills.appendChild(skill);
+  softSkills.classList.add("skill-border");
+});
+// ----- social-media-icons ------
 
-// document.getElementById("top-btn2").addEventListener("click", function () {
-//   console.log("ok2");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div2-el").classList.remove("hide");
-//   count = 2;
-// });
+document
+  .getElementById("social-media-github-1-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg", "_blank");
+  });
+document
+  .getElementById("social-media-github-2-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg", "_blank");
+  });
+document
+  .getElementById("social-media-github-3-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg", "_blank");
+  });
+document
+  .getElementById("social-media-github-4-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg", "_blank");
+  });
 
-// document.getElementById("top-btn3").addEventListener("click", function () {
-//   console.log("ok3");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div3-el").classList.remove("hide");
-//   count = 3;
-// });
+document
+  .getElementById("social-media-linkedin-1-el")
+  .addEventListener("click", () => {
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
+  });
+document
+  .getElementById("social-media-linkedin-2-el")
+  .addEventListener("click", () => {
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
+  });
+document
+  .getElementById("social-media-linkedin-3-el")
+  .addEventListener("click", () => {
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
+  });
+document
+  .getElementById("social-media-linkedin-4-el")
+  .addEventListener("click", () => {
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
+  });
 
-// document.getElementById("top-btn4").addEventListener("click", function () {
-//   console.log("ok4");
-//   document.getElementById(`div${count}-el`).classList.add("hide");
-//   document.getElementById("div4-el").classList.remove("hide");
-//   count = 4;
-// });
+document.querySelector(".social-media-email").addEventListener("click", () => {
+  navigator.clipboard.writeText("pgrigg1991@gmail.com");
+  console.log("test");
+  document
+    .getElementById("email-copied-1-el")
+    .classList.remove("email-copied-hidden");
+  setTimeout(() => {
+    document
+      .getElementById("email-copied-1-el")
+      .classList.add("email-copied-hidden");
+  }, 800);
+});
+
+document
+  .querySelector(".social-media-email-2")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-2-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-2-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
+
+document
+  .querySelector(".social-media-email-3")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-3-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-3-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
+
+document
+  .querySelector(".social-media-email-4")
+  .addEventListener("click", () => {
+    navigator.clipboard.writeText("pgrigg1991@gmail.com");
+    console.log("test");
+    document
+      .getElementById("email-copied-4-el")
+      .classList.remove("email-copied-hidden");
+    setTimeout(() => {
+      document
+        .getElementById("email-copied-4-el")
+        .classList.add("email-copied-hidden");
+    }, 800);
+  });
+
+const aboutNameContainer = document.getElementById("slide-about-name-el");
+
+const aboutName = document.createElement("img");
+aboutName.setAttribute("src", "./name-img/name.svg");
+
+aboutNameContainer.appendChild(aboutName);

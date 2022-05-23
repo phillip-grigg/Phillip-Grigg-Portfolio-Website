@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <use xlink:href="#_Image1" x="12.047" y="13.045" width="180.148px" height="180.181px" transform="matrix(0.995291,0,0,0.995474,0,0)"/>
+    <g transform="matrix(1.8,0,0,1.8,10,10)">
+        <path d="M100,25C100,11.202 88.798,0 75,0L25,0C11.202,0 0,11.202 0,25L0,75C0,88.798 11.202,100 25,100L75,100C88.798,100 100,88.798 100,75L100,25Z" style="fill:url(#_Radial2);"/>
+    </g>
+    <g transform="matrix(0.9,0,0,0.9,10,10)">
+        <path d="M200,50C200,22.404 177.596,0 150,0L50,0C22.404,0 0,22.404 0,50L0,150C0,177.596 22.404,200 50,200L150,200C177.596,200 200,177.596 200,150L200,50Z" style="fill:white;"/>
+    </g>
+    <g id="javascript-logo" transform="matrix(0.9,0,0,0.9,11.1116,11.062)">
+        <g id="path5113" transform="matrix(0.0565399,0,0,0.0562598,39.0237,-8.19656)">
+            <path d="M161.25,3219.55L-42.867,972.556L2156.1,973.413L1953.7,3217.84L1054.9,3471.7L161.25,3219.55ZM1788.18,3096.91L1958.85,1172.38L1058.33,1172.38L1065.19,3295.03L1788.18,3096.91ZM974.286,1454.55L755.589,1454.55L753.016,2606.35L328.488,2490.57L329.346,2753.86L974.286,2927.96L974.286,1454.55Z" style="fill:rgb(212,184,48);fill-rule:nonzero;"/>
+        </g>
+        <g id="path5159" transform="matrix(0.0565399,0,0,0.0562598,39.0237,-8.19656)">
+            <path d="M902.244,2906.52C873.943,2897.94 734.148,2860.21 591.781,2821.61L333.634,2752.14L333.634,2622.64C333.634,2495.71 333.634,2493.14 346.498,2497.43C353.359,2500 447.699,2525.73 555.761,2555.75L752.159,2609.78L755.589,1460.55L969.997,1460.55L969.997,2191.25C969.997,2771.87 968.282,2921.95 962.279,2921.95C957.991,2921.1 930.546,2914.24 902.244,2906.52Z" style="fill-rule:nonzero;"/>
+        </g>
+        <g id="path5157" transform="matrix(0.0565399,0,0,0.0562598,39.0237,-8.19656)">
+            <path d="M329.346,2753.86L328.488,2490.57C328.488,2490.57 599.5,2566.89 753.016,2606.35L755.589,1455.4L974.286,1455.4L974.286,2927.96L329.346,2753.86Z" style="fill:white;fill-opacity:0.92;fill-rule:nonzero;"/>
+        </g>
+        <g id="path5117" transform="matrix(0.0565399,0,0,0.0562598,39.0237,-8.19656)">
+            <path d="M1058.33,1171.53L1958.85,1171.53L1788.18,3096.06L1058.33,3294.17L1058.33,1171.53ZM1741.87,2773.59L1801.04,2054.03L1363.65,2102.92L1363.65,1718.7L1830.2,1716.98L1849.07,1454.55L1144.95,1457.98L1154.39,2413.38L1579.77,2340.48L1573.77,2553.17L1144.95,2667.24L1149.24,2927.96L1741.87,2773.59Z" style="fill:rgb(253,216,60);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.846639,0,0,1,2.17686,0)">
+            <g>
+                <g transform="matrix(1,0,0,1,42,35.793)">
+                    <text x="0px" y="0px" style="font-family:'AvenirNext-BoldItalic', 'Avenir Next', sans-serif;font-weight:700;font-style:italic;font-size:24px;">J</text>
+                </g>
+                <g transform="matrix(1,0,0,1,54.312,35.793)">
+                    <text x="0px" y="0px" style="font-family:'AvenirNext-BoldItalic', 'Avenir Next', sans-serif;font-weight:700;font-style:italic;font-size:24px;">A<tspan x="16.176px 31.776px 48.816px " y="0px 0px 0px ">VAS</tspan>CRIP</text>
+                </g>
+                <g transform="matrix(1,0,0,1,172.032,35.793)">
+                    <text x="0px" y="0px" style="font-family:'AvenirNext-BoldItalic', 'Avenir Next', sans-serif;font-weight:700;font-style:italic;font-size:24px;">T</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="181px" height="181px" xlink:href="data:image/png;base64,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"/>
+        <radialGradient id="_Radial2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-23,35,-35,-23,50,48)"><stop offset="0" style="stop-color:rgb(1,0,0);stop-opacity:1"/><stop offset="0.49" style="stop-color:rgb(4,0,0);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(11,0,0);stop-opacity:1"/></radialGradient>
+    </defs>
+</svg>

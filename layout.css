@@ -67,3 +67,91 @@
   top: 24.88%;
   bottom: 50.82%;
 }
+
+/* // const aboutSlideMoveRight = anime({
+  //   targets: "#slide-about-el",
+  //   width: "0%",
+  //   direction: "normal",
+  //   duration: 3000,
+  //   easing: "easeInOutExpo",
+  //   autoplay: false,
+  // });
+  // const projectsSlideMoveRight = anime({
+  //   targets: "#slide-projects-el",
+  //   width: "0%",
+  //   direction: "normal",
+  //   duration: 3000,
+  //   easing: "easeInOutExpo",
+  //   autoplay: false,
+  // });
+  // const skillsSlideMoveRight = anime({
+  //   targets: "#slide-skills-el",
+  //   width: "0%",
+  //   direction: "normal",
+  //   duration: 3000,
+  //   easing: "easeInOutExpo",
+  //   autoplay: false,
+  // });
+  // const contactSlideMoveRight = anime({
+  //   targets: "#slide-contact-el",
+  //   width: "0%",
+  //   direction: "normal",
+  //   duration: 3000,
+  //   easing: "easeInOutExpo",
+  //   autoplay: false,
+  // });
+  
+  // aboutSlideMoveRight.play();
+  // setTimeout(() => {
+  //   aboutSlideMoveLeft.play();
+  // }, 4000);
+  
+  // old code
+  
+  // slideSkills.classList.add("hide-slide");
+  
+  // function hideHiddenSlide() {
+  //   divThree.classList.add("hide-slide");
+  // }
+  
+  // function showHiddenSlide() {
+  //   slideSkills.classList.remove("hide-slide");
+  // }
+  
+  // document
+  //   .getElementById("six-cog-top-inner-el")
+  //   .addEventListener("click", pressBtnLeft);
+  
+  // document
+  //   .getElementById("six-cog-bottom-inner-el")
+  //   .addEventListener("click", pressBtnRight);
+  
+  // ----- menu buttons -----
+  // document.getElementById("top-btn1").addEventListener("click", function () {
+  //   console.log("ok1");
+  //   console.log(count);
+  //   document.getElementById(`div${countTranslate}-el`).classList.add("hide");
+  //   document.getElementById("div1-el").classList.remove("hide");
+  //   count = 1;
+  // });
+  
+  // document.getElementById("top-btn2").addEventListener("click", function () {
+  //   console.log("ok2");
+  //   document.getElementById(`div${count}-el`).classList.add("hide");
+  //   document.getElementById("div2-el").classList.remove("hide");
+  //   count = 2;
+  // });
+  
+  // document.getElementById("top-btn3").addEventListener("click", function () {
+  //   console.log("ok3");
+  //   document.getElementById(`div${count}-el`).classList.add("hide");
+  //   document.getElementById("div3-el").classList.remove("hide");
+  //   count = 3;
+  // });
+  
+  // document.getElementById("top-btn4").addEventListener("click", function () {
+  //   console.log("ok4");
+  //   document.getElementById(`div${count}-el`).classList.add("hide");
+  //   document.getElementById("div4-el").classList.remove("hide");
+  //   count = 4;
+  // }); */
