@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="photoshop-logo">
-        <g transform="matrix(0.2675,0,0,0.2675,100,100)">
-            <g transform="matrix(1,0,0,1,-400,-400)">
+    <use xlink:href="#_Image1" x="15.082" y="13.007" width="177.229px" height="173.878px" transform="matrix(0.995669,0,0,0.999299,0,0)"/>
+    <g transform="matrix(1.76974,0,0,1.73514,13.0257,10)">
+        <path d="M100,25C100,11.202 88.798,0 75,0L25,0C11.202,0 0,11.202 0,25L0,75C0,88.798 11.202,100 25,100L75,100C89.5,101.331 101.003,90.698 100,75L100,25Z" style="fill:url(#_Radial2);"/>
+    </g>
+    <g id="photoshop-logo" transform="matrix(0.910185,0,0,0.910185,10,5.73852)">
+        <g transform="matrix(0.2675,0,0,0.2675,-7,-7)">
+            <g>
                 <g id="Layer_2_1_">
                     <g id="Surfaces">
                         <g id="Photo_Surface">
@@ -23,11 +27,15 @@
         </g>
         <g id="Layer2" opacity="0.8">
             <g transform="matrix(1.03529,0,0,1,-1.65306e-14,1)">
-                <path d="M85,154.591C85,152.608 83.447,151 81.531,151C65.574,151 0,151 0,151L0,174L81.531,174C83.447,174 85,172.392 85,170.409C85,166.096 85,158.904 85,154.591Z" style="fill:white;"/>
+                <path d="M85,154.591C85,152.608 83.447,151 81.531,151L0,151L0,174L81.531,174C83.447,174 85,172.392 85,170.409L85,154.591Z" style="fill:white;"/>
             </g>
-            <g transform="matrix(1.08255,0,0,1,5.11647,-3.54)">
-                <text x="0px" y="171px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:15px;">Photoshop</text>
+            <g transform="matrix(1.08255,0,0,1,5.11647,167.46)">
+                <text x="0px" y="0px" style="font-family:'AvenirNext-MediumItalic', 'Avenir Next', sans-serif;font-weight:500;font-style:italic;font-size:15px;">Photoshop</text>
             </g>
         </g>
     </g>
+    <defs>
+        <image id="_Image1" width="178px" height="174px" xlink:href="data:image/png;base64,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"/>
+        <radialGradient id="_Radial2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-23,35,-35,-23,50,48)"><stop offset="0" style="stop-color:rgb(1,0,0);stop-opacity:1"/><stop offset="0.49" style="stop-color:rgb(4,0,0);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(11,0,0);stop-opacity:1"/></radialGradient>
+    </defs>
 </svg>

@@ -96,50 +96,79 @@ console.log(countTranslateSlider);
 
 // ----- left/right buttons -----
 
-let TurnSliderLeft = false;
+// set buttons to work on arrow keys and n and p keys
+let btnFreeToPress = true;
+document.addEventListener("keydown", function (e) {
+  if (btnFreeToPress == true && (e.key === "ArrowRight" || e.key === "n")) {
+    event.preventDefault();
+    btnRightPress();
+    btnFreeToPress = false;
+    setTimeout(() => {
+      btnFreeToPress = true;
+    }, 3000);
+  } else if (
+    btnFreeToPress == true &&
+    (e.key === "ArrowLeft" || e.key === "p")
+  ) {
+    event.preventDefault();
+    btnLeftPress();
+    btnFreeToPress = false;
+    setTimeout(() => {
+      btnFreeToPress = true;
+    }, 3000);
+  }
+});
 
+let TurnSliderLeft = false;
+// call button function on cog click
 const btnLeft = document
   .getElementById("fourteen-cog-inner-el")
-  .addEventListener("click", () => {
+  .addEventListener("click", btnLeftPress);
+
+function btnLeftPress() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  document
+    .getElementById("screen-for-button-press-el")
+    .classList.add("screen-for-button-press-display");
+  pressBtnLeft();
+  ChangeNameSlider();
+  setTimeout(() => {
+    slideName.textContent = "";
+  }, 1000);
+  setTimeout(() => {
+    slideName.textContent = countTranslateTable[count];
+  }, 2100);
+  setTimeout(() => {
     document
       .getElementById("screen-for-button-press-el")
-      .classList.add("screen-for-button-press-display");
-    pressBtnLeft();
-    ChangeNameSlider();
-    setTimeout(() => {
-      slideName.textContent = "";
-    }, 1100);
-    setTimeout(() => {
-      slideName.textContent = countTranslateTable[count];
-    }, 2100);
-    setTimeout(() => {
-      document
-        .getElementById("screen-for-button-press-el")
-        .classList.remove("screen-for-button-press-display");
-    }, 3500);
-  });
+      .classList.remove("screen-for-button-press-display");
+  }, 3000);
+}
 
 const btnRight = document
   .getElementById("twenty-four-cog-inner-el")
-  .addEventListener("click", () => {
+  .addEventListener("click", btnRightPress);
+
+function btnRightPress() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  document
+    .getElementById("screen-for-button-press-el")
+    .classList.add("screen-for-button-press-display");
+  pressBtnRight();
+  ChangeNameSlider();
+  setTimeout(() => {
+    slideName.textContent = "";
+  }, 1000);
+  setTimeout(() => {
+    slideName.textContent = countTranslateTable[count];
+  }, 2100);
+  setTimeout(() => {
     document
       .getElementById("screen-for-button-press-el")
-      .classList.add("screen-for-button-press-display");
-    pressBtnRight();
-    ChangeNameSlider();
-    setTimeout(() => {
-      slideName.textContent = "";
-    }, 1100);
-    setTimeout(() => {
-      slideName.textContent = countTranslateTable[count];
-    }, 2100);
-    setTimeout(() => {
-      document
-        .getElementById("screen-for-button-press-el")
-        .classList.remove("screen-for-button-press-display");
-    }, 3500);
-  });
-
+      .classList.remove("screen-for-button-press-display");
+  }, 3000);
+}
+// change name of slide on name slider
 function ChangeNameSlider() {
   anime({
     targets: "#slide-name-el",
@@ -160,6 +189,7 @@ function ChangeNameSlider() {
 }
 
 function pressBtnLeft() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
   if (count > 1) {
     twentyFourCogAnimationLeft.play();
     sixCogTopAnimationLeft.play();
@@ -237,8 +267,6 @@ function pressBtnLeft() {
     countPlusOne = `slide-${countTranslateTable[count + 1]}-el`;
     document.getElementById(countPlusOne).classList.add("hide-slide");
   }, 3000);
-
-  console.log(count);
 }
 
 function pressBtnRight() {
@@ -312,9 +340,11 @@ function pressBtnRight() {
     countPlusOne = `slide-${countTranslateTable[count + 1]}-el`;
     document.getElementById(countPlusOne).classList.add("hide-slide");
     countPlusTwo = `slide-${countTranslateTable[count + 2]}-el`;
-    document.getElementById(countPlusOne).classList.add("hide-slide");
-    countPlusThree = `slide-${countTranslateTable[count + 3]}-el`;
-    document.getElementById(countPlusOne).classList.add("hide-slide");
+    document.getElementById(countPlusTwo).classList.add("hide-slide");
+    setTimeout(() => {
+      countPlusThree = `slide-${countTranslateTable[count + 3]}-el`;
+      document.getElementById(countPlusThree).classList.add("hide-slide");
+    }, 2500);
   }
   console.log(count);
 }
@@ -473,7 +503,7 @@ topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDiv = document.getElementById("top-cog-2-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDiv.appendChild(topCogSingle.cloneNode(true));
 }
 
@@ -482,7 +512,7 @@ topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivTwo = document.getElementById("top-cog-1-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivTwo.appendChild(topCogSingle.cloneNode(true));
 }
 
@@ -491,7 +521,7 @@ topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivThree = document.getElementById("top-cog-3-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivThree.appendChild(topCogSingle.cloneNode(true));
 }
 
@@ -500,7 +530,7 @@ topCogSingle.setAttribute("src", "./top-cog.svg");
 
 const topCogDivFour = document.getElementById("top-cog-4-el");
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
   topCogDivFour.appendChild(topCogSingle.cloneNode(true));
 }
 
@@ -547,6 +577,9 @@ hardSkillArray.push(hardSkill10);
 const hardSkill11 = document.createElement("img");
 hardSkill11.setAttribute("src", "./hard-skills-logo/affinity-photo-logo.svg");
 hardSkillArray.push(hardSkill11);
+const hardSkill12 = document.createElement("img");
+hardSkill12.setAttribute("src", "./hard-skills-logo/anime.js-logo.svg");
+hardSkillArray.push(hardSkill12);
 
 hardSkillArray.forEach(function (skill) {
   hardSkills.appendChild(skill);
@@ -613,22 +646,22 @@ document
 document
   .getElementById("social-media-linkedin-1-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
   });
 document
   .getElementById("social-media-linkedin-2-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
   });
 document
   .getElementById("social-media-linkedin-3-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
   });
 document
   .getElementById("social-media-linkedin-4-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillip-grigg", "_blank");
+    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
   });
 
 document.querySelector(".social-media-email").addEventListener("click", () => {
@@ -695,7 +728,3 @@ const aboutName = document.createElement("img");
 aboutName.setAttribute("src", "./name-img/name.svg");
 
 aboutNameContainer.appendChild(aboutName);
-
-// ----- contact slide -----
-
-// ----- end of contact slide -----
