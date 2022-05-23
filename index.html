@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon icons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,6 +35,7 @@
       href="favicon/android-chrome-512x512.png"
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,6 +50,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./styles.css" />
     <title>Phillip Grigg WebDev</title>
   </head>
@@ -57,17 +60,20 @@
       <div class="under-construction-screen">
         <h1>under construction</h1>
       </div>
+      <!-- under hide website currently off end-->
       <!-- screen to cover website with div whist button animation being pressed to stop multi button pressing -->
       <div
         id="screen-for-button-press-el"
         class="screen-for-button-press"
       ></div>
+      <!-- screen to cover website with div whist button animation being pressed to stop multi button pressing end-->
       <!-- slider name -->
       <menu-left class="menu-left">
         <div id="menu-slider-el" class="menu-slider">
           <h1 id="slide-name-el" class="slide-name">about</h1>
         </div>
       </menu-left>
+      <!-- slider name end -->
       <!-- cog menu -->
       <div class="menu-container">
         <menu class="menu">
@@ -152,6 +158,7 @@
           </div>
         </menu>
       </div>
+      <!-- cog menu end-->
       <!-- slides -->
       <div class="slide-container">
         <!-- contact-slide -->
@@ -350,6 +357,7 @@
             </div>
           </div>
         </div>
+        <!-- contact-slide end -->
         <!-- skills slide -->
         <div id="slide-skills-el" class="slide slide-skills">
           <div id="top-cog-3-el" class="top-cog"></div>
@@ -530,6 +538,7 @@
             </div>
           </div>
         </div>
+        <!-- skills slide end -->
         <!-- projects slide -->
         <div id="slide-projects-el" class="slide slide-projects">
           <div id="top-cog-1-el" class="top-cog"></div>
@@ -543,7 +552,9 @@
                 <div class="project-photo">
                   <img src="./project-imgs/portfolio-website-svg.svg" alt="" />
                   <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
+                    <button id="github-portfolio-website" class="project-btn">
+                      view github repo
+                    </button>
                   </div>
                 </div>
 
@@ -841,6 +852,7 @@
             </div>
           </div>
         </div>
+        <!-- projects slide end-->
         <!-- about slide -->
         <div id="slide-about-el" class="slide slide-about">
           <div id="top-cog-2-el" class="top-cog"></div>
@@ -851,10 +863,14 @@
             <h2 class="slide-about-job">Front-End Web Developer</h2>
             <hr class="slide-about-hr slide-about-hr-bottom" />
             <div class="about-text-top-and-portrait-photo">
-              <p>
-                Young, Foolhardy, Reckless. These are all words to describe
-                me….. 10 years ago, but let me take a moment to talk about me
-                now.
+              <p class="intro-text">
+                <span class="im-phil-text">Hi, I'm Phil,</span> originally from
+                the UK and now living in the US.
+                <br />
+                <br />
+                This is my website. Not so much a practical example of a single
+                page layout but an experiment in building an interactive and
+                engaging multi-page website on just one page.
               </p>
               <img
                 src="./images/portrait-img/phillip-grigg.png"
@@ -864,11 +880,20 @@
                 alt=""
               />
             </div>
+            <p class="intro-text">
+              This site has four slides: About, Projects, Skills and a Contact
+              page. As you may have figured, you press the ‘Next →’ button to go
+              to a new slide and can go back by pressing the ‘←’ button. But if
+              that seems like a lot of bother, feel free to press the ‘Right
+              Arrow’ or ‘N’ keys to go forward and the ‘Left Arrow’ or ‘P’ keys
+              to go back. <br />Hope you enjoy!
+            </p>
+            <p class="more-about-me">More About Me</p>
             <p>
-              Back as a British boy of 19, dyslexic with a deep fear of exams, I
-              put my logical brain into low power mode and fully embraced my
-              starving artist side to do a Bachelor's degree in Digital Film and
-              Screen Arts.
+              Back as a boy of 19, dyslexic with a deep fear of exams, I put my
+              logical brain into low power mode and fully embraced my starving
+              artist side to do a Bachelor's degree in Digital Film and Screen
+              Arts.
             </p>
             <p>
               In becoming a web developer, I have put my logical brain back on 3
@@ -1048,7 +1073,9 @@
             </div>
           </div>
         </div>
+        <!-- about slide end-->
       </div>
+      <!-- slides end-->
     </div>
 
     <script src="./anime.min.js"></script>

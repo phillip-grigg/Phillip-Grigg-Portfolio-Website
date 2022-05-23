@@ -533,6 +533,15 @@ const topCogDivFour = document.getElementById("top-cog-4-el");
 for (let i = 0; i < 200; i++) {
   topCogDivFour.appendChild(topCogSingle.cloneNode(true));
 }
+// ----- projects slide -----
+document
+  .getElementById("github-portfolio-website")
+  .addEventListener("click", () => {
+    window.open(
+      "https://github.com/phillip-grigg/Phillip-Grigg-Portfolio-Website.git",
+      "_blank"
+    );
+  });
 
 // ----- skills slide ------
 
@@ -625,43 +634,43 @@ softSkillArray.forEach(function (skill) {
 document
   .getElementById("social-media-github-1-el")
   .addEventListener("click", () => {
-    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+    window.open("https://github.com/phillip-grigg", "_blank");
   });
 document
   .getElementById("social-media-github-2-el")
   .addEventListener("click", () => {
-    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+    window.open("https://github.com/phillip-grigg", "_blank");
   });
 document
   .getElementById("social-media-github-3-el")
   .addEventListener("click", () => {
-    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+    window.open("https://github.com/phillip-grigg", "_blank");
   });
 document
   .getElementById("social-media-github-4-el")
   .addEventListener("click", () => {
-    window.open("https://github.com/phillip-grigg/pgrigg-website01", "_blank");
+    window.open("https://github.com/phillip-grigg", "_blank");
   });
 
 document
   .getElementById("social-media-linkedin-1-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
   });
 document
   .getElementById("social-media-linkedin-2-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
   });
 document
   .getElementById("social-media-linkedin-3-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
   });
 document
   .getElementById("social-media-linkedin-4-el")
   .addEventListener("click", () => {
-    window.open("www.linkedin.com/in/phillipgrigg", "_blank");
+    window.open("https://linkedin.com/in/phillipgrigg91", "_blank");
   });
 
 document.querySelector(".social-media-email").addEventListener("click", () => {
