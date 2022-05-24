@@ -25,8 +25,11 @@ p {
   background-color: whitesmoke;
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   display: none;
 }
@@ -93,6 +96,7 @@ p {
   min-width: 100vw;
   max-width: 100vw;
   display: grid;
+  -webkit-box-pack: end;
   justify-content: flex-end;
   overflow: hidden;
   z-index: 0;
@@ -102,6 +106,7 @@ p {
 
 .cog-container {
   position: fixed;
+  -webkit-transform: translateY(-48px);
   transform: translateY(-48px);
 }
 
@@ -225,23 +230,34 @@ p {
 
 .top-cog {
   width: 100vw;
-  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  /* height: fit-content; */
+  height: 12px;
   /* box-shadow: 13px 2px 7px -2px #000000; */
   display: grid;
   grid-template-columns: repeat(200, 12px);
+  -webkit-box-pack: end;
   justify-content: flex-end;
   gap: 10px;
   margin-bottom: -1px;
   z-index: 5;
 }
 
+.safari-fix {
+  height: 12px;
+}
+
 .top-cog-2 {
   position: absolute;
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   /* box-shadow: 13px 2px 7px -2px #000000; */
   display: grid;
   grid-template-columns: repeat(200, 12px);
+  -webkit-box-pack: end;
   justify-content: flex-end;
   gap: 10px;
   margin-bottom: -1px;
@@ -252,6 +268,7 @@ p {
   z-index: 0;
   height: 25rem;
   width: 25rem;
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -423,6 +440,8 @@ p {
   margin-top: 1rem;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.2);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -466,6 +485,7 @@ p {
   display: grid;
   padding: 2rem 2rem;
   grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  -webkit-box-pack: justify;
   justify-content: space-between;
   gap: 0.5rem;
 }
@@ -497,6 +517,10 @@ p {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   /* box-shadow: 1px 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.safari-fix-skills {
+  height: 8rem;
 }
 
 /* ----- contact slide ----- */
@@ -558,7 +582,9 @@ textarea {
 .social-media-icon-links {
   height: 2rem;
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
@@ -583,7 +609,9 @@ textarea {
 
 .copy-email {
   color: rgba(255, 255, 255, 1);
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   gap: 0.4rem;
   margin-top: 2rem;
@@ -597,6 +625,7 @@ textarea {
   background-color: rgb(241, 255, 255);
   border-radius: 50%;
   border: none;
+  -webkit-transform: translateY(10%);
   transform: translateY(10%);
 }
 
@@ -609,6 +638,7 @@ textarea {
   margin: auto;
   margin-top: 1rem;
   grid-template-columns: 1fr 1fr;
+  -webkit-transform: translateX(25%);
   transform: translateX(25%);
   margin-top: 02rem;
 }
@@ -617,6 +647,7 @@ textarea {
   color: white;
   font-size: 1rem;
   position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-138%);
   transform: translateX(-50%) translateY(-138%);
   background-color: rgba(0, 0, 0, 0.203);
   padding: 0.2rem;
