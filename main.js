@@ -499,7 +499,7 @@ const twentyCogAnimationRight = anime({
 // ----- appending cog notches to top of slides -----
 
 const topCogSingle = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog.svg");
+topCogSingle.setAttribute("src", "./images/cog-svgs/top-cog.svg");
 topCogSingle.classList.add("safari-fix");
 
 const topCogDiv = document.getElementById("top-cog-2-el");
@@ -509,7 +509,7 @@ for (let i = 0; i < 200; i++) {
 }
 
 const topCogSingleTwo = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog.svg");
+topCogSingle.setAttribute("src", "./images/cog-svgs/top-cog.svg");
 
 const topCogDivTwo = document.getElementById("top-cog-1-el");
 
@@ -518,7 +518,7 @@ for (let i = 0; i < 200; i++) {
 }
 
 const topCogSingleThree = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog.svg");
+topCogSingle.setAttribute("src", "./images/cog-svgs/top-cog.svg");
 
 const topCogDivThree = document.getElementById("top-cog-3-el");
 
@@ -527,7 +527,7 @@ for (let i = 0; i < 200; i++) {
 }
 
 const topCogSingleFour = document.createElement("img");
-topCogSingle.setAttribute("src", "./top-cog.svg");
+topCogSingle.setAttribute("src", "./images/cog-svgs/top-cog.svg");
 
 const topCogDivFour = document.getElementById("top-cog-4-el");
 
@@ -552,54 +552,63 @@ let hardSkillArray = [];
 const hardSkills = document.getElementById("hard-skills-grid-el");
 
 const hardSkill1 = document.createElement("img");
-hardSkill1.setAttribute("src", "./hard-skills-logo/html-logo.svg");
+hardSkill1.setAttribute("src", "./images/hard-skills-logo/html-logo.svg");
 hardSkill1.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill1);
 const hardSkill2 = document.createElement("img");
-hardSkill2.setAttribute("src", "./hard-skills-logo/css-logo.svg");
+hardSkill2.setAttribute("src", "./images/hard-skills-logo/css-logo.svg");
 hardSkill2.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill2);
 const hardSkill3 = document.createElement("img");
-hardSkill3.setAttribute("src", "./hard-skills-logo/javascript-logo.svg");
+hardSkill3.setAttribute("src", "./images/hard-skills-logo/javascript-logo.svg");
 hardSkill3.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill3);
 const hardSkill4 = document.createElement("img");
-hardSkill4.setAttribute("src", "./hard-skills-logo/css-flexbox-logo.svg");
+hardSkill4.setAttribute(
+  "src",
+  "./images/hard-skills-logo/css-flexbox-logo.svg"
+);
 hardSkill4.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill4);
 const hardSkill5 = document.createElement("img");
-hardSkill5.setAttribute("src", "./hard-skills-logo/css-grig-logo.svg");
+hardSkill5.setAttribute("src", "./images/hard-skills-logo/css-grig-logo.svg");
 hardSkill5.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill5);
 const hardSkill6 = document.createElement("img");
-hardSkill6.setAttribute("src", "./hard-skills-logo/git-logo.svg");
+hardSkill6.setAttribute("src", "./images/hard-skills-logo/git-logo.svg");
 hardSkill6.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill6);
 const hardSkill7 = document.createElement("img");
-hardSkill7.setAttribute("src", "./hard-skills-logo/github-logo.svg");
+hardSkill7.setAttribute("src", "./images/hard-skills-logo/github-logo.svg");
 hardSkill7.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill7);
 const hardSkill8 = document.createElement("img");
-hardSkill8.setAttribute("src", "./hard-skills-logo/photoshop-logo.svg");
+hardSkill8.setAttribute("src", "./images/hard-skills-logo/photoshop-logo.svg");
 hardSkill8.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill8);
 const hardSkill9 = document.createElement("img");
-hardSkill9.setAttribute("src", "./hard-skills-logo/Illustrator-logo.svg");
+hardSkill9.setAttribute(
+  "src",
+  "./images/hard-skills-logo/Illustrator-logo.svg"
+);
 hardSkill9.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill9);
 const hardSkill10 = document.createElement("img");
 hardSkill10.setAttribute(
   "src",
-  "./hard-skills-logo/affinity-designer-logo.svg"
+  "./images/hard-skills-logo/affinity-designer-logo.svg"
 );
 hardSkill10.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill10);
 const hardSkill11 = document.createElement("img");
-hardSkill11.setAttribute("src", "./hard-skills-logo/affinity-photo-logo.svg");
+hardSkill11.setAttribute(
+  "src",
+  "./images/hard-skills-logo/affinity-photo-logo.svg"
+);
 hardSkill11.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill11);
 const hardSkill12 = document.createElement("img");
-hardSkill12.setAttribute("src", "./hard-skills-logo/anime.js-logo.svg");
+hardSkill12.setAttribute("src", "./images/hard-skills-logo/anime.js-logo.svg");
 hardSkill12.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill12);
 
@@ -613,35 +622,35 @@ let softSkillArray = [];
 
 const softSkills = document.getElementById("soft-skills-grid-el");
 const softSkill1 = document.createElement("img");
-softSkill1.setAttribute("src", "./soft-skills-logo/communication.svg");
+softSkill1.setAttribute("src", "./images/soft-skills-logo/communication.svg");
 softSkill1.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill1);
 const softSkill2 = document.createElement("img");
-softSkill2.setAttribute("src", "./soft-skills-logo/multitasking.svg");
+softSkill2.setAttribute("src", "./images/soft-skills-logo/multitasking.svg");
 softSkill2.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill2);
 const softSkill3 = document.createElement("img");
-softSkill3.setAttribute("src", "./soft-skills-logo/learning.svg");
+softSkill3.setAttribute("src", "./images/soft-skills-logo/learning.svg");
 softSkill3.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill3);
 const softSkill4 = document.createElement("img");
-softSkill4.setAttribute("src", "./soft-skills-logo/self-learning.svg");
+softSkill4.setAttribute("src", "./images/soft-skills-logo/self-learning.svg");
 softSkill4.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill4);
 const softSkill5 = document.createElement("img");
-softSkill5.setAttribute("src", "./soft-skills-logo/coding-smell.svg");
+softSkill5.setAttribute("src", "./images/soft-skills-logo/coding-smell.svg");
 softSkill5.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill5);
 const softSkill6 = document.createElement("img");
-softSkill6.setAttribute("src", "./soft-skills-logo/problem-solving.svg");
+softSkill6.setAttribute("src", "./images/soft-skills-logo/problem-solving.svg");
 softSkill6.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill6);
 const softSkill7 = document.createElement("img");
-softSkill7.setAttribute("src", "./soft-skills-logo/teamwork.svg");
+softSkill7.setAttribute("src", "./images/soft-skills-logo/teamwork.svg");
 softSkill7.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill7);
 const softSkill8 = document.createElement("img");
-softSkill8.setAttribute("src", "./soft-skills-logo/troubleshooting.svg");
+softSkill8.setAttribute("src", "./images/soft-skills-logo/troubleshooting.svg");
 softSkill8.classList.add("safari-fix-skills");
 softSkillArray.push(softSkill8);
 
@@ -754,6 +763,6 @@ document
 const aboutNameContainer = document.getElementById("slide-about-name-el");
 
 const aboutName = document.createElement("img");
-aboutName.setAttribute("src", "./name-img/name.svg");
+aboutName.setAttribute("src", "./images/name-img/name.svg");
 
 aboutNameContainer.appendChild(aboutName);
