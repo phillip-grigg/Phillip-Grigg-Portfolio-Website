@@ -539,7 +539,7 @@ document
   .getElementById("github-portfolio-website")
   .addEventListener("click", () => {
     window.open(
-      "https://github.com/phillip-grigg/Phillip-Grigg-Portfolio-Website.git",
+      "https://github.com/phillip-grigg/phillip-grigg-portfolio-website.git",
       "_blank"
     );
   });
