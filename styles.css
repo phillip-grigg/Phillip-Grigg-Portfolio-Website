@@ -232,9 +232,7 @@ p {
   width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  /* height: fit-content; */
-  height: 12px;
-  /* box-shadow: 13px 2px 7px -2px #000000; */
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(200, 12px);
   -webkit-box-pack: end;
@@ -248,22 +246,6 @@ p {
   height: 12px;
 }
 
-.top-cog-2 {
-  position: absolute;
-  width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  /* box-shadow: 13px 2px 7px -2px #000000; */
-  display: grid;
-  grid-template-columns: repeat(200, 12px);
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-bottom: -1px;
-  z-index: 6;
-}
-
 .menu-cog {
   z-index: 0;
   height: 25rem;
@@ -274,7 +256,7 @@ p {
 
 /* ----- about slide ----- */
 .div-two-2 {
-  background-image: url(./background-gradents/background-grandent-blue-2.svg);
+  background-image: url(./images/background-gradents/background-grandent-blue-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -376,7 +358,7 @@ p {
 
 /* ----- projects slide ----- */
 .div-three-2 {
-  background-image: url(./background-gradents/background-gradent-blue-3.svg);
+  background-image: url(./images/background-gradents/background-gradent-blue-3.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -472,7 +454,7 @@ p {
 
 /* ----- skills slide ----- */
 .div-one-2 {
-  background-image: url(./background-gradents/backgrand-gradent-blue.svg);
+  background-image: url(./images/background-gradents/backgrand-gradent-blue.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -526,7 +508,7 @@ p {
 /* ----- contact slide ----- */
 
 .div-four-2 {
-  background-image: url(./background-gradents/background-grandent-blue-2.svg);
+  background-image: url(./images//background-gradents/background-grandent-blue-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
