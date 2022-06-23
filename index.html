@@ -55,6 +55,18 @@
     <title>Phillip Grigg WebDev</title>
   </head>
   <body>
+    <!-- weather-app -->
+    <div id="weather-app-el" class="weather-app hide-slide">
+      <button id="weather-app-btn-el" class="app-close-btn">X</button>
+      <div class="app-container">
+        <iframe
+          src="./Weather App/weather.html"
+          height="470px"
+          width="525px"
+          title="Weather App/Converter"
+        ></iframe>
+      </div>
+    </div>
     <div class="all-content-container">
       <!-- under hide website currently off -->
       <div class="under-construction-screen">
@@ -594,37 +606,48 @@
               </div>
               <div class="project">
                 <div class="project-photo">
-                  <img
-                    src="./images/project-imgs/portfolio-website-svg.svg"
-                    alt=""
-                  />
-                  <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
+                  <img src="./images/project-imgs/weather-app-svg.svg" alt="" />
+                  <div class="project-btns">
+                    <button id="weather-app-project-btn" class="project-btn">
+                      view app
+                    </button>
+                    <button id="github-weather-app-el" class="project-btn">
+                      view github repo
+                    </button>
                   </div>
                 </div>
 
                 <div class="project-text">
-                  <h2 class="project-title project-title-main">Coming Soon</h2>
+                  <h2 class="project-title project-title-main">
+                    Weather App/Converter
+                  </h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam beatae deleniti reiciendis neque, quia reprehenderit
-                    vero consectetur ea autem fuga, culpa itaque aliquam nisi
-                    debitis!
+                    As a Brit living in the US I'm used to temperatures being in
+                    C but now everything is in F. This app was built to be a
+                    google chrome extension that uses the accuweather API to
+                    show a location's temp in both Celsius and Fahrenheit and
+                    lets you convert one to the other.
                   </p>
                   <h2 class="project-title">Problems with the build</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam veritatis perferendis, odio molestias, eum sunt quidem
-                    illum non beatae voluptate enim incidunt harum.
+                    For the slider I used a mouseover event listener to change
+                    the C and F temp inputs as the slider moves. Originally this
+                    happened whenever the mouse was over the slider. But I
+                    wanted it to only change the C and F as you moved the
+                    slider.
                   </p>
                   <h2 class="project-title">The Fix</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque tempora sint vero facilis expedita harum molestiae
-                    ex, tenetur debitis sequi?
+                    I added an if statement to the mouseover event listener that
+                    starts a counter at 0 but changes depending on the
+                    slider.value, so the if statement only fired when the
+                    counter was < less or > more then 0.
                   </p>
                   <h2 class="project-title">Skills Used</h2>
-                  <p class="project-paragraph">HTML, CSS, JS</p>
+                  <p class="project-paragraph">
+                    HTML, CSS, JS, Figma, CSS grid, Asynchronous JS, Fetch
+                    request to API
+                  </p>
                 </div>
               </div>
               <div class="project">
@@ -1089,7 +1112,6 @@
       </div>
       <!-- slides end-->
     </div>
-
     <script src="./anime.min.js"></script>
     <script src="./main.js"></script>
   </body>
