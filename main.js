@@ -544,6 +544,30 @@ document
     );
   });
 
+// weather app
+function closeProject() {
+  weatherApp.classList.add("hide-slide");
+}
+
+const weatherApp = document.getElementById("weather-app-el");
+weatherApp.addEventListener("click", closeProject);
+
+document
+  .getElementById("weather-app-btn-el")
+  .addEventListener("click", closeProject);
+
+const weatherAppProjectBtn = document
+  .getElementById("weather-app-project-btn")
+  .addEventListener("click", function () {
+    weatherApp.classList.remove("hide-slide");
+  });
+
+document
+  .getElementById("github-weather-app-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/Weather-App-Converter.git");
+  });
+
 // ----- skills slide ------
 
 // - hard skills -

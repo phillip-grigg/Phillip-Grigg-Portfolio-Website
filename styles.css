@@ -446,10 +446,48 @@ p {
   color: rgb(255, 255, 255);
   text-transform: capitalize;
   cursor: pointer;
+  min-width: 8rem;
+  margin-bottom: 0.2rem;
 }
 
 .project-btn:hover {
   background-color: rgb(233, 149, 69);
+}
+
+.app-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.app-close-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 80%;
+}
+
+.app-close-btn:hover {
+  background-color: rgba(245, 250, 253, 1);
+  transform: scale(120%);
+  -webkit-transform: scale(120%);
+  -moz-transform: scale(120%);
+  -ms-transform: scale(120%);
+  -o-transform: scale(120%);
+}
+
+.weather-app {
+  z-index: 20;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.803);
 }
 
 /* ----- skills slide ----- */
