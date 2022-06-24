@@ -490,6 +490,24 @@ p {
   background-color: rgba(255, 255, 255, 0.803);
 }
 
+.weather-app-iframe {
+  transform: scale(70%);
+  -webkit-transform: scale(70%);
+  -moz-transform: scale(70%);
+  -ms-transform: scale(70%);
+  -o-transform: scale(70%);
+}
+
+@media screen and (min-width: 600px) {
+  .weather-app-iframe {
+    transform: scale(100%);
+    -webkit-transform: scale(100%);
+    -moz-transform: scale(100%);
+    -ms-transform: scale(100%);
+    -o-transform: scale(100%);
+  }
+}
+
 /* ----- skills slide ----- */
 .div-one-2 {
   background-image: url(./images/background-gradents/backgrand-gradent-blue.svg);
