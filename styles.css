@@ -516,6 +516,7 @@ p {
 
 .figma-examples-photo {
   width: 90vw;
+  max-width: 50rem;
 }
 
 /* ----- skills slide ----- */
