@@ -481,7 +481,7 @@ p {
   -ms-transform: scale(120%);
   -o-transform: scale(120%);
 }
-
+/* weather app */
 .weather-app {
   z-index: 20;
   position: fixed;
@@ -496,6 +496,16 @@ p {
   -moz-transform: scale(70%);
   -ms-transform: scale(70%);
   -o-transform: scale(70%);
+}
+/* figma examples photo container */
+.figma-examples-photo-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.figma-examples-photo {
+  width: 90vw;
 }
 
 @media screen and (min-width: 600px) {
