@@ -497,16 +497,6 @@ p {
   -ms-transform: scale(70%);
   -o-transform: scale(70%);
 }
-/* figma examples photo container */
-.figma-examples-photo-container {
-  display: grid;
-  justify-content: center;
-  margin-top: 8rem;
-}
-
-.figma-examples-photo {
-  width: 90vw;
-}
 
 @media screen and (min-width: 600px) {
   .weather-app-iframe {
@@ -516,6 +506,16 @@ p {
     -ms-transform: scale(100%);
     -o-transform: scale(100%);
   }
+}
+/* figma examples photo container */
+.figma-examples-photo-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.figma-examples-photo {
+  width: 90vw;
 }
 
 /* ----- skills slide ----- */
