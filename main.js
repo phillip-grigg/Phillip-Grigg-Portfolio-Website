@@ -639,10 +639,7 @@ hardSkill3.setAttribute("src", "./images/hard-skills-logo/javascript-logo.svg");
 hardSkill3.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill3);
 const hardSkill4 = document.createElement("img");
-hardSkill4.setAttribute(
-  "src",
-  "./images/hard-skills-logo/css-flexbox-logo.svg"
-);
+hardSkill4.setAttribute("src", "./images/hard-skills-logo/react-logo.svg");
 hardSkill4.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill4);
 const hardSkill5 = document.createElement("img");
@@ -686,7 +683,10 @@ const hardSkill12 = document.createElement("img");
 hardSkill12.setAttribute("src", "./images/hard-skills-logo/anime.js-logo.svg");
 hardSkill12.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill12);
-
+const hardSkill13 = document.createElement("img");
+hardSkill13.setAttribute("src", "./images/hard-skills-logo/vsc-logo.svg");
+hardSkill13.classList.add("safari-fix-skills");
+hardSkillArray.push(hardSkill13);
 hardSkillArray.forEach(function (skill) {
   hardSkills.appendChild(skill);
   hardSkills.classList.add("skill-border");
