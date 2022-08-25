@@ -72,6 +72,22 @@
         ></iframe>
       </div>
     </div>
+    <!-- gradient-mixer -->
+    <div id="gradient-mixer-el" class="gradient-app hide-slide">
+      <button id="gradient-app-btn-el" class="app-close-btn">X</button>
+      <button id="gradient-in-new-tab-el" class="gradient-in-new-tab">
+        open in new tab
+      </button>
+      <div class="app-container test">
+        <iframe
+          class="gradient-app-iframe"
+          src="https://pgrigggradientmixer.netlify.app/"
+          height="610px"
+          width="525px"
+          title="Weather App/Converter"
+        ></iframe>
+      </div>
+    </div>
     <!-- figma-examples -->
     <div id="figma-examples-el" class="weather-app hide-slide">
       <button id="weather-app-btn-el" class="app-close-btn">X</button>
@@ -577,6 +593,65 @@
               skills i used
             </h4>
             <div class="projects-container">
+              <!-- react app -->
+              <div class="project">
+                <div class="project-photo">
+                  <img
+                    src="./images/project-imgs/gradient-mixer-icon.svg"
+                    alt=""
+                  />
+                  <div class="projects-btns">
+                    <button id="gradient-mixer-repo-btn" class="project-btn">
+                      view github repo
+                    </button>
+                  </div>
+                  <div class="projects-btns">
+                    <button id="gradient-mixer-view-btn" class="project-btn">
+                      view app
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-text">
+                  <h2 class="project-title project-title-main">
+                    Gradient-Mixer in REACT
+                  </h2>
+                  <p class="project-paragraph">
+                    This app that lets you control a simple 3 part gradient,
+                    changing each part's color, spread and the overall
+                    orientation to horizontal/vertical. It uses an array of
+                    objects saved in React State to record the parts of the
+                    gradient, and takes the color values from a separate js.file
+                    mapping them down to build a div component with a button for
+                    each color.
+                  </p>
+                  <h2 class="project-title">Problems with the build</h2>
+                  <p class="project-paragraph">
+                    Going about deciding how to set multiple CSS values for the
+                    control buttons, in the JS or on a separate stylesheet, that
+                    would update depending upon what horizontal/vertical
+                    orientation the gradient was in.
+                  </p>
+                  <h2 class="project-title">The Fix</h2>
+                  <p class="project-paragraph">
+                    By creating two separate class names for each control button
+                    and reference a bolen value state object (
+                    orientationToBottom: true/false ), I was able to set
+                    variables for each button using ternary statements that set
+                    up the right class name as state was set (<span
+                      class="code-in-text"
+                      >let topMiddleBottomBtns = gradient.orientationToBottom ?
+                      "top-middle-bottom-btns-vertical" :
+                      "top-middle-bottom-btns"; </span
+                    >) and then set these variables as each buttons
+                    className<span class="code-in-text"
+                      >={topMiddleBottomBtns}</span
+                    >.
+                  </p>
+                  <h2 class="project-title">Skills Used</h2>
+                  <p class="project-paragraph">React, HTML, CSS, JS, Figma</p>
+                </div>
+              </div>
               <div class="project">
                 <div class="project-photo">
                   <img
@@ -712,41 +787,6 @@
                   <p class="project-paragraph">Figma, Affinity Designer</p>
                 </div>
               </div>
-              <!-- <div class="project">
-                <div class="project-photo">
-                  <img
-                    src="./images/project-imgs/portfolio-website-svg.svg"
-                    alt=""
-                  />
-                  <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
-                  </div>
-                </div>
-
-                <div class="project-text">
-                  <h2 class="project-title project-title-main">Coming Soon</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam beatae deleniti reiciendis neque, quia reprehenderit
-                    vero consectetur ea autem fuga, culpa itaque aliquam nisi
-                    debitis!
-                  </p>
-                  <h2 class="project-title">Problems with the build</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam veritatis perferendis, odio molestias, eum sunt quidem
-                    illum non beatae voluptate enim incidunt harum.
-                  </p>
-                  <h2 class="project-title">The Fix</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque tempora sint vero facilis expedita harum molestiae
-                    ex, tenetur debitis sequi?
-                  </p>
-                  <h2 class="project-title">Skills Used</h2>
-                  <p class="project-paragraph">HTML, CSS, JS</p>
-                </div>
-              </div> -->
             </div>
             <div class="social-media-icon-links">
               <div

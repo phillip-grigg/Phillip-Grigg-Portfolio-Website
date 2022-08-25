@@ -481,6 +481,11 @@ p {
   -ms-transform: scale(120%);
   -o-transform: scale(120%);
 }
+
+.code-in-text {
+  font-size: 0.6rem;
+}
+
 /* weather app */
 .weather-app {
   z-index: 20;
@@ -507,6 +512,33 @@ p {
     -o-transform: scale(100%);
   }
 }
+
+/* gradient-mixer */
+.gradient-app {
+  z-index: 20;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.803);
+}
+
+.gradient-app-iframe {
+  margin-top: -4.6rem;
+}
+
+.gradient-in-new-tab {
+  position: fixed;
+  display: flex;
+  margin: -2rem 1rem;
+  font-size: 1rem;
+  padding: 0.2rem;
+  text-transform: capitalize;
+}
+
+.gradient-in-new-tab:hover {
+  transform: scale(110%);
+}
+
 /* figma examples photo container */
 .figma-examples-photo-container {
   display: grid;

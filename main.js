@@ -543,14 +543,15 @@ document
       "_blank"
     );
   });
-
-// weather app
-function closeProject() {
-  weatherApp.classList.add("hide-slide");
+function closeProject(appView) {
+  appView.classList.add("hide-slide");
 }
+// weather app
 
 const weatherApp = document.getElementById("weather-app-el");
-weatherApp.addEventListener("click", closeProject);
+weatherApp.addEventListener("click", function () {
+  closeProject(weatherApp);
+});
 
 document
   .getElementById("weather-app-btn-el")
@@ -566,6 +567,32 @@ document
   .getElementById("github-weather-app-el")
   .addEventListener("click", () => {
     window.open("https://github.com/phillip-grigg/Weather-App-Converter.git");
+  });
+
+// gradient-mixer
+const gradientMixer = document.getElementById("gradient-mixer-el");
+gradientMixer.addEventListener("click", function () {
+  closeProject(gradientMixer);
+});
+
+const gradientMixerBtn = document
+  .getElementById("gradient-mixer-view-btn")
+  .addEventListener("click", function () {
+    gradientMixer.classList.remove("hide-slide");
+  });
+
+document
+  .getElementById("gradient-in-new-tab-el")
+  .addEventListener("click", function () {
+    window.open("https://pgrigggradientmixer.netlify.app", "_blank").focus();
+  });
+
+document
+  .getElementById("gradient-mixer-repo-btn")
+  .addEventListener("click", function () {
+    window
+      .open("https://github.com/phillip-grigg/gradient-mixer.git", "_blank")
+      .focus();
   });
 
 // figma-examples
