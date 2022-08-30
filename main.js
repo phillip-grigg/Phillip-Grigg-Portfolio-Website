@@ -584,7 +584,7 @@ const gradientMixerBtn = document
 document
   .getElementById("gradient-in-new-tab-el")
   .addEventListener("click", function () {
-    window.open("https://pgrigggradientmixer.netlify.app", "_blank").focus();
+    window.open("https://pgrigggradientmixer.netlify.app/", "_blank").focus();
   });
 
 document
@@ -643,7 +643,7 @@ hardSkill4.setAttribute("src", "./images/hard-skills-logo/react-logo.svg");
 hardSkill4.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill4);
 const hardSkill5 = document.createElement("img");
-hardSkill5.setAttribute("src", "./images/hard-skills-logo/css-grig-logo.svg");
+hardSkill5.setAttribute("src", "./images/hard-skills-logo/vsc-logo.svg");
 hardSkill5.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill5);
 const hardSkill6 = document.createElement("img");
@@ -684,9 +684,16 @@ hardSkill12.setAttribute("src", "./images/hard-skills-logo/anime.js-logo.svg");
 hardSkill12.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill12);
 const hardSkill13 = document.createElement("img");
-hardSkill13.setAttribute("src", "./images/hard-skills-logo/vsc-logo.svg");
+hardSkill13.setAttribute("src", "./images/hard-skills-logo/css-grig-logo.svg");
 hardSkill13.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill13);
+const hardSkill14 = document.createElement("img");
+hardSkill14.setAttribute(
+  "src",
+  "./images/hard-skills-logo/css-flexbox-logo.svg"
+);
+hardSkill14.classList.add("safari-fix-skills");
+hardSkillArray.push(hardSkill14);
 hardSkillArray.forEach(function (skill) {
   hardSkills.appendChild(skill);
   hardSkills.classList.add("skill-border");
