@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <!-- favicon icons -->
     <link
       rel="apple-touch-icon"
@@ -55,6 +59,47 @@
     <title>Phillip Grigg WebDev</title>
   </head>
   <body>
+    <!-- weather-app -->
+    <div id="weather-app-el" class="weather-app hide-slide">
+      <button id="weather-app-btn-el" class="app-close-btn">X</button>
+      <div class="app-container test">
+        <iframe
+          class="weather-app-iframe"
+          src="./Weather App/weather.html"
+          height="470px"
+          width="525px"
+          title="Weather App/Converter"
+        ></iframe>
+      </div>
+    </div>
+    <!-- gradient-mixer -->
+    <div id="gradient-mixer-el" class="gradient-app hide-slide">
+      <button id="gradient-app-btn-el" class="app-close-btn">X</button>
+      <button id="gradient-in-new-tab-el" class="gradient-in-new-tab">
+        open in new tab
+      </button>
+      <div class="app-container test">
+        <iframe
+          class="gradient-app-iframe"
+          src="https://pgrigggradientmixer.netlify.app/"
+          height="610px"
+          width="525px"
+          title="Weather App/Converter"
+        ></iframe>
+      </div>
+    </div>
+    <!-- figma-examples -->
+    <div id="figma-examples-el" class="weather-app hide-slide">
+      <button id="weather-app-btn-el" class="app-close-btn">X</button>
+      <div class="figma-examples-photo-container">
+        <img
+          class="figma-examples-photo"
+          src="./images/figma-example-img/figma-example.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- main-content -->
     <div class="all-content-container">
       <!-- under hide website currently off -->
       <div class="under-construction-screen">
@@ -548,6 +593,64 @@
               skills i used
             </h4>
             <div class="projects-container">
+              <!-- react app -->
+              <div class="project">
+                <div class="project-photo">
+                  <img
+                    src="./images/project-imgs/gradient-mixer-icon.svg"
+                    alt=""
+                  />
+                  <div class="projects-btns">
+                    <button id="gradient-mixer-repo-btn" class="project-btn">
+                      view github repo
+                    </button>
+                  </div>
+                  <div class="projects-btns">
+                    <button id="gradient-mixer-view-btn" class="project-btn">
+                      view app
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-text">
+                  <h2 class="project-title project-title-main">
+                    Gradient-Mixer in REACT
+                  </h2>
+                  <p class="project-paragraph">
+                    This app lets you control a simple 3 part gradient, changing
+                    each part's color, spread and the overall orientation to
+                    horizontal/vertical. It uses an array of objects saved in
+                    React State to record the parts of the gradient, and takes
+                    the color values from a separate js.file mapping them down
+                    to build a div component with a button for each color.
+                  </p>
+                  <h2 class="project-title">Problems with the build</h2>
+                  <p class="project-paragraph">
+                    Going about deciding how to set multiple CSS values for the
+                    control buttons, in the JS or on a separate stylesheet, that
+                    would update depending upon what horizontal/vertical
+                    orientation the gradient was in.
+                  </p>
+                  <h2 class="project-title">The Fix</h2>
+                  <p class="project-paragraph">
+                    By creating two separate class names for each control button
+                    and reference a bolen value state object (
+                    orientationToBottom: true/false ), I was able to set
+                    variables for each button using ternary statements that set
+                    up the right class name as state was set (<span
+                      class="code-in-text"
+                      >let topMiddleBottomBtns = gradient.orientationToBottom ?
+                      "top-middle-bottom-btns-vertical" :
+                      "top-middle-bottom-btns"; </span
+                    >) and then set these variables as each buttons
+                    className<span class="code-in-text"
+                      >={topMiddleBottomBtns}</span
+                    >.
+                  </p>
+                  <h2 class="project-title">Skills Used</h2>
+                  <p class="project-paragraph">React, HTML, CSS, JS, Figma</p>
+                </div>
+              </div>
               <div class="project">
                 <div class="project-photo">
                   <img
@@ -594,107 +697,93 @@
               </div>
               <div class="project">
                 <div class="project-photo">
-                  <img
-                    src="./images/project-imgs/portfolio-website-svg.svg"
-                    alt=""
-                  />
-                  <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
+                  <img src="./images/project-imgs/weather-app-svg.svg" alt="" />
+                  <div class="project-btns">
+                    <button id="weather-app-project-btn" class="project-btn">
+                      view app
+                    </button>
+                    <button id="github-weather-app-el" class="project-btn">
+                      view github repo
+                    </button>
                   </div>
                 </div>
 
                 <div class="project-text">
-                  <h2 class="project-title project-title-main">Coming Soon</h2>
+                  <h2 class="project-title project-title-main">
+                    Weather App/Converter
+                  </h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam beatae deleniti reiciendis neque, quia reprehenderit
-                    vero consectetur ea autem fuga, culpa itaque aliquam nisi
-                    debitis!
+                    As a Brit living in the US I'm used to temperatures being in
+                    C but now everything is in F. This app was built to be a
+                    google chrome extension that uses the accuweather API to
+                    show a location's temp in both Celsius and Fahrenheit and
+                    lets you convert one to the other.
                   </p>
                   <h2 class="project-title">Problems with the build</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam veritatis perferendis, odio molestias, eum sunt quidem
-                    illum non beatae voluptate enim incidunt harum.
+                    For the slider I used a mouseover event listener to change
+                    the C and F temp inputs as the slider moves. Originally this
+                    happened whenever the mouse was over the slider. But I
+                    wanted it to only change the C and F as you moved the
+                    slider.
                   </p>
                   <h2 class="project-title">The Fix</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque tempora sint vero facilis expedita harum molestiae
-                    ex, tenetur debitis sequi?
+                    I added an if statement to the mouseover event listener that
+                    starts a counter at 0 but changes depending on the
+                    slider.value, so the if statement only fired when the
+                    counter was < less or > more then 0.
                   </p>
                   <h2 class="project-title">Skills Used</h2>
-                  <p class="project-paragraph">HTML, CSS, JS</p>
+                  <p class="project-paragraph">
+                    HTML, CSS, JS, Figma, CSS grid, Asynchronous JS, Fetch
+                    request to API
+                  </p>
                 </div>
               </div>
               <div class="project">
                 <div class="project-photo">
-                  <img
-                    src="./images/project-imgs/portfolio-website-svg.svg"
-                    alt=""
-                  />
+                  <img src="./images/project-imgs/figma-icon.svg" alt="" />
+                  <button id="figma-examples-btn-el" class="project-btn">
+                    examples
+                  </button>
                   <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
+                    <button
+                      id="figma-examples-github-btn-el"
+                      class="project-btn"
+                    >
+                      view github repo
+                    </button>
                   </div>
                 </div>
 
                 <div class="project-text">
-                  <h2 class="project-title project-title-main">Coming Soon</h2>
+                  <h2 class="project-title project-title-main">
+                    Figma Prototypes
+                  </h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam beatae deleniti reiciendis neque, quia reprehenderit
-                    vero consectetur ea autem fuga, culpa itaque aliquam nisi
-                    debitis!
+                    In learning Figma I wanted a fast way to layout, test and
+                    share designs.
                   </p>
                   <h2 class="project-title">Problems with the build</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam veritatis perferendis, odio molestias, eum sunt quidem
-                    illum non beatae voluptate enim incidunt harum.
+                    Coming from a Adobe Photoshop/Illustrator background I found
+                    Figma to be limited in its graphic design options and didn’t
+                    gel with the way of doing things I was used to.
                   </p>
                   <h2 class="project-title">The Fix</h2>
                   <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque tempora sint vero facilis expedita harum molestiae
-                    ex, tenetur debitis sequi?
+                    I realized that I needed to come to Figma not as a graphic
+                    designer but as a web designer. I started using groups and
+                    frames to build layouts in the same way a website uses divs.
+                    To nest objects within containers so they can be organized
+                    on multiple levels within the web page. When I changed my
+                    way of thinking I found Figma to be a fantastic tool for
+                    prototyping websites safe in the knowledge that my design
+                    would be transferable to code.
                   </p>
                   <h2 class="project-title">Skills Used</h2>
-                  <p class="project-paragraph">HTML, CSS, JS</p>
-                </div>
-              </div>
-              <div class="project">
-                <div class="project-photo">
-                  <img
-                    src="./images/project-imgs/portfolio-website-svg.svg"
-                    alt=""
-                  />
-                  <div class="projects-btns">
-                    <button class="project-btn">view github repo</button>
-                  </div>
-                </div>
-
-                <div class="project-text">
-                  <h2 class="project-title project-title-main">Coming Soon</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam beatae deleniti reiciendis neque, quia reprehenderit
-                    vero consectetur ea autem fuga, culpa itaque aliquam nisi
-                    debitis!
-                  </p>
-                  <h2 class="project-title">Problems with the build</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Nam veritatis perferendis, odio molestias, eum sunt quidem
-                    illum non beatae voluptate enim incidunt harum.
-                  </p>
-                  <h2 class="project-title">The Fix</h2>
-                  <p class="project-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque tempora sint vero facilis expedita harum molestiae
-                    ex, tenetur debitis sequi?
-                  </p>
-                  <h2 class="project-title">Skills Used</h2>
-                  <p class="project-paragraph">HTML, CSS, JS</p>
+                  <p class="project-paragraph">Figma, Affinity Designer</p>
                 </div>
               </div>
             </div>
@@ -898,7 +987,9 @@
               to a new slide and can go back by pressing the ‘←’ button. But if
               that seems like a lot of bother, feel free to press the ‘Right
               Arrow’ or ‘N’ keys to go forward and the ‘Left Arrow’ or ‘P’ keys
-              to go back. <br />Hope you enjoy!
+              to go back. <br />
+              <br />
+              Hopefully it goes like clockwork !
             </p>
             <p class="more-about-me">More About Me</p>
             <p>
@@ -909,9 +1000,8 @@
             </p>
             <p>
               In becoming a web developer, I have put my logical brain back on 3
-              square meals a day and a full workout plan (never skipping coding
-              problems day) and have remembered what I never really forgot, how
-              much fun problem solving can be.
+              square meals a day and have remembered what I never really forgot,
+              how much fun problem solving can be.
             </p>
             <p>
               With an eagerness to learn and a work ethic built with experience,
@@ -1089,7 +1179,6 @@
       </div>
       <!-- slides end-->
     </div>
-
     <script src="./anime.min.js"></script>
     <script src="./main.js"></script>
   </body>

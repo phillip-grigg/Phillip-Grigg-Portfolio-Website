@@ -543,6 +543,81 @@ document
       "_blank"
     );
   });
+function closeProject(appView) {
+  appView.classList.add("hide-slide");
+}
+// weather app
+
+const weatherApp = document.getElementById("weather-app-el");
+weatherApp.addEventListener("click", function () {
+  closeProject(weatherApp);
+});
+
+document
+  .getElementById("weather-app-btn-el")
+  .addEventListener("click", closeProject);
+
+const weatherAppProjectBtn = document
+  .getElementById("weather-app-project-btn")
+  .addEventListener("click", function () {
+    weatherApp.classList.remove("hide-slide");
+  });
+
+document
+  .getElementById("github-weather-app-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/Weather-App-Converter.git");
+  });
+
+// gradient-mixer
+const gradientMixer = document.getElementById("gradient-mixer-el");
+gradientMixer.addEventListener("click", function () {
+  closeProject(gradientMixer);
+});
+
+const gradientMixerBtn = document
+  .getElementById("gradient-mixer-view-btn")
+  .addEventListener("click", function () {
+    gradientMixer.classList.remove("hide-slide");
+  });
+
+document
+  .getElementById("gradient-in-new-tab-el")
+  .addEventListener("click", function () {
+    window.open("https://pgrigggradientmixer.netlify.app/", "_blank").focus();
+  });
+
+document
+  .getElementById("gradient-mixer-repo-btn")
+  .addEventListener("click", function () {
+    window
+      .open("https://github.com/phillip-grigg/gradient-mixer.git", "_blank")
+      .focus();
+  });
+
+// figma-examples
+function closeProjectFigmaExamples() {
+  figmaExamples.classList.add("hide-slide");
+}
+
+const figmaExamples = document.getElementById("figma-examples-el");
+figmaExamples.addEventListener("click", closeProjectFigmaExamples);
+
+document
+  .getElementById("weather-app-btn-el")
+  .addEventListener("click", closeProject);
+
+const figmaExamplesBtn = document
+  .getElementById("figma-examples-btn-el")
+  .addEventListener("click", function () {
+    figmaExamples.classList.remove("hide-slide");
+  });
+
+document
+  .getElementById("figma-examples-github-btn-el")
+  .addEventListener("click", () => {
+    window.open("https://github.com/phillip-grigg/Figma-Examples.git");
+  });
 
 // ----- skills slide ------
 
@@ -564,14 +639,11 @@ hardSkill3.setAttribute("src", "./images/hard-skills-logo/javascript-logo.svg");
 hardSkill3.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill3);
 const hardSkill4 = document.createElement("img");
-hardSkill4.setAttribute(
-  "src",
-  "./images/hard-skills-logo/css-flexbox-logo.svg"
-);
+hardSkill4.setAttribute("src", "./images/hard-skills-logo/react-logo.svg");
 hardSkill4.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill4);
 const hardSkill5 = document.createElement("img");
-hardSkill5.setAttribute("src", "./images/hard-skills-logo/css-grig-logo.svg");
+hardSkill5.setAttribute("src", "./images/hard-skills-logo/vsc-logo.svg");
 hardSkill5.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill5);
 const hardSkill6 = document.createElement("img");
@@ -611,7 +683,17 @@ const hardSkill12 = document.createElement("img");
 hardSkill12.setAttribute("src", "./images/hard-skills-logo/anime.js-logo.svg");
 hardSkill12.classList.add("safari-fix-skills");
 hardSkillArray.push(hardSkill12);
-
+const hardSkill13 = document.createElement("img");
+hardSkill13.setAttribute("src", "./images/hard-skills-logo/css-grig-logo.svg");
+hardSkill13.classList.add("safari-fix-skills");
+hardSkillArray.push(hardSkill13);
+const hardSkill14 = document.createElement("img");
+hardSkill14.setAttribute(
+  "src",
+  "./images/hard-skills-logo/css-flexbox-logo.svg"
+);
+hardSkill14.classList.add("safari-fix-skills");
+hardSkillArray.push(hardSkill14);
 hardSkillArray.forEach(function (skill) {
   hardSkills.appendChild(skill);
   hardSkills.classList.add("skill-border");
